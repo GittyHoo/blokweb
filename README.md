@@ -22,7 +22,7 @@ Luka Bronius
 Blauw/rood
 
 #### Je focus:
-hier je focus (kies uit responsive óf surface plane)
+Ik zal me gaan focussen op de responsive van de website.
  
 </details>
 
