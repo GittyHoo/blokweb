@@ -16,10 +16,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Sanne 't Hooft (vervangen door jouw naam)
+Luka Bronius
 
 #### Je startniveau:
-hier je startniveau (kies uit zwart, rood óf blauw)
+Blauw/rood
 
 #### Je focus:
 hier je focus (kies uit responsive óf surface plane)
@@ -36,15 +36,16 @@ hier je focus (kies uit responsive óf surface plane)
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+Voor deze opdracht zal ik proberen om de website van bol.com na te maken. Ik heb zelf nog niet super veel ervaring in het bouwen en coderen van een website, dus ik wil me graag uitdagen met deze opdracht.
+bol.com
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/bol.jpg" width="375px" alt="Hoofdpagina bol">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/bol2.jpg" width="375px" alt="boeken pagina">
  
 </details>
 
