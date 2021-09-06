@@ -40,11 +40,11 @@ Voor deze opdracht zal ik proberen om de website van bol.com na te maken. Ik heb
 bol.com
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+Hoofdpagina
 <img src="images/bol.png" width="375px" alt="Hoofdpagina bol">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
+De deals pagina
 <img src="images/bol2.png" width="375px" alt="boeken pagina">
  
 </details>
