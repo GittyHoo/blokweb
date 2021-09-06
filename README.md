@@ -41,11 +41,11 @@ bol.com
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/bol.jpg" width="375px" alt="Hoofdpagina bol">
+<img src="images/bol.png" width="375px" alt="Hoofdpagina bol">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/bol2.jpg" width="375px" alt="boeken pagina">
+<img src="images/bol2.png" width="375px" alt="boeken pagina">
  
 </details>
 
