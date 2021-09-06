@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Luka Bronius
 
 #### Je startniveau:
-Blauw/rood
+Mijn niveau ligt tussen het blauw en rood in.
 
 #### Je focus:
 Ik zal me gaan focussen op de responsive van de website.
@@ -37,7 +37,6 @@ Ik zal me gaan focussen op de responsive van de website.
 
 ### Je opdracht:
 Voor deze opdracht zal ik proberen om de website van bol.com na te maken. Ik heb zelf nog niet super veel ervaring in het bouwen en coderen van een website, dus ik wil me graag uitdagen met deze opdracht.
-bol.com
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Hoofdpagina
