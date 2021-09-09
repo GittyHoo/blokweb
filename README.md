@@ -58,10 +58,10 @@ De deals pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina + footer: 
-<img src="images/breakdown_bol.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown_bol.png" width="375px" alt="breakdown van de hele pagina">
  
  ### pagina 2: 
-<img src="images/breakdown_bol2.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown_bol2.png" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
