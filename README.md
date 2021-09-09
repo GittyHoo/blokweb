@@ -57,14 +57,11 @@ De deals pagina
 <details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### de hele pagina + footer: 
+<img src="images/breakdown_bol.jpg" width="375px" alt="breakdown van de hele pagina">
+ 
+ ### pagina 2: 
+<img src="images/breakdown_bol2.jpg" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
