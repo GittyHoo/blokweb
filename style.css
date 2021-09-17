@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color:rgb(0, 0, 164);
+  --main-textcolor:rgb(0, 0, 164);
+  --main-backgroundcolor:white;
+}
+
+/*Hamburger menu*/
+
+nav { 
+  background-color: rgb(236, 236, 236);
+  padding: 2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width:calc(100% - 2em);
+  max-width: 65%;
+  transition: 1s;
+  transform:translateX(-100%)
+  }
+  
+  nav.hamburgerOpen {
+      transform:translateX(0%)
+  }
+  
+  .hamburger {
+  position: absolute;
+  width: 10%;
+  margin:0;
+  padding:.25em;
+  
+  top:calc(10% - 3.5em);
+  left:105%;
+  cursor: pointer;
+  }
+
+/*end*/  
+
+/*Hamburger menu tekst
+
+.flex-container {
+display: flex;
+flex-direction: row wrap;
+justify-content: space-around;
+padding: 0;
+margin:0;
+list-style: none;
+}
+
+.catagory{
+  padding: 3em;
+}
+
+*/
+
+li {
+  list-style-type: none;
+  font-family: 'Arvo', serif;
+}
+
+
+/*Header*/
+
+header {
+  position: relative;
+  background: linear-gradient( to bottom, #f279ab, #ea6097, #de457e);
+  width: 100%;
+  height: 12em;
+  top: 3.5em;
+  left: 0;
+}
+
+h1 {
+  position: absolute;
+  top: .5em;
+  left: .5em;
+  font-family: 'Arvo', serif;
+  font-weight:bolder;
+  font-size: 1.7em;
+  color: var(--main-textcolor);
+}
+
+.infotext {
+  position: relative;
+  top: 1.5em;
+  font-family: 'Arvo', serif;
+  font-weight:100; 
+  color: var(--main-textcolor);
+}
+
+img {
+  position: absolute;
+  width: 30px;
+  left: 1.08em;
+  bottom: 1em;
+}
+
+/*Blokken onder de header*/
+
+section {
+flex-direction: row;
+position: relative;
+margin-top: 1em;
+margin-left: 1em;
+margin-right: 1em;
+margin-bottom: 2em;
+background: linear-gradient( to bottom, #f279ab, #ea6097, #de457e);
+width: 60%;
+height: 12em;
+}
+
+h2 {
+  position: absolute;
+  top: .5em;
+  left: 1em;
+  font-family: 'Arvo', serif;
+  font-weight:bolder;
+  font-size: 1em;
+  color: var(--main-textcolor);
+  margin-right: 1em;
+}
+
+.subtext {
+  position: absolute;
+  top: 1.8em;
+  font-family: 'Arvo', serif;
+  font-weight:100; 
+  color: var(--main-textcolor);
+  margin-right: 1em;
+}
+
+figure {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+h3 {
+  font-family: 'Arvo', serif;
+  font-weight:bolder;
+  font-size: 1em;
+  color: black;
+}
+
+p {
+  font-family: 'Arvo', serif;
+  font-weight:100; 
+  font-size: 1em;
+  color: black;
+}
