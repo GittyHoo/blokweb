@@ -75,7 +75,7 @@ De deals pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+In het begin van het project was ikzelf erg enthousiast en had ik er ook erg veel zin in. Echter, nu dat we twee weken verder zijn is mijn enthousiasme veranderd in frustratie. De vele elementen en termen die terugkomen bij het coderen, verwarren mij erg snel. Hierdoor ben ik soms wel urenlang bezig geweest met ‘’gemakkelijke’’ code.  
 
 
 ### Agenda voor meeting
