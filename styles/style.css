@@ -1,0 +1,41 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-color:rgb(0, 0, 164);
+  --main-textcolor:rgb(0, 0, 164);
+  --main-backgroundcolor:white;
+}
+
+/*catagory slide*/
+
+.catagory {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+/*Banner tekst*/
+
+h2 {
+  margin: 1em 1em 0em 1em;
+  font-size: 1.5em;
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+}
+
+
+/*tekst*/
+
+h4 {
+  margin: 1em 1em 1em 1em;
+  font-size: 1.125em;
+  font-family: 'Arvo', serif;
+}
