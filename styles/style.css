@@ -14,21 +14,84 @@
   --main-backgroundcolor:white;
 }
 
+/*Div searchbalk*/
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding: 2em;
+  background-color: var(--main-textcolor);
+}
+
+.searchTerm {
+  width: 100%;
+  border: .01em solid lightgrey;
+  border-right:none;
+  padding: 5px;
+  padding-left:1.5em;
+  height: 50px;
+  border-radius: 4em;
+  outline: none;
+  color: lightgrey;
+}
+
+.searchTerm:focus{
+  color: var(--main-textcolor);
+}
+
+.balk {
+  position: absolute;
+  width: 100%;
+}
+
+.searchButton img {
+  position: absolute;
+  width: 35px;
+  top: 2.4em;
+  left: 18em;
+}
+
 /*Nav*/
 
-nav li ul a {
+nav{
+  position: relative;
+  top: 10em;
+}
+
+ul {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+nav ul li {
+  list-style-type:none;
+}
+
+.navigation a {
   font-size: .8em;
   font-family: 'Arvo', serif;
   font-weight: 400;
   color: var(--main-textcolor);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .3em;
 }
-
 
 .navigation img{
   border-radius: 5em;
   background-color: #F1F6FE;
-  padding: 1.5em;
-  width: 35px;
+  padding: .8em;
+  width: 50px;
+}
+
+.hamburger {
+  width: 25px;
+  margin-left: 4em;
 }
 
 /* Banner */
@@ -133,11 +196,12 @@ h4 {
   color: black;
   font-family: 'Arvo', serif;
   font-weight: 700;
+  font-size: .8em;
+  line-height: 1.5;
 }
 
 .aanbevelingen li a p {
-  text-align: left;
-  text-decoration: none;
+  margin-top: 1em;
   color: red;
   font-family: 'Arvo', serif;
   font-weight: 300;
@@ -147,7 +211,7 @@ h4 {
   width: 10em;
 }
 
-/*kortingen*/
+/*Voordeel en inspiratie*/
 
 .kortingen {
   position: relative;
@@ -165,7 +229,6 @@ h4 {
 .kortingen li a img {
   width: 14em;
 }
-
 
 /*Cadeaus sectie*/
 
@@ -193,3 +256,6 @@ h4 {
   font-weight: 400;
 }
 
+section {
+  position: relative;
+}
