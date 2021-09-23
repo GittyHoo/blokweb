@@ -16,12 +16,16 @@
 
 /*Nav*/
 
+.navigation {
+  
+}
 
 
 .navigation img{
   border-radius: 5em;
   background-color: #F1F6FE;
   padding: 1.5em;
+  width: 35px;
 }
 
 /* Banner */
