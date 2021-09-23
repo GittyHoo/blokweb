@@ -14,6 +14,14 @@
   --main-backgroundcolor:white;
 }
 
+/*Nav icons*/
+
+nav ul li a img {
+  border-radius: 5em;
+  background-color: #F1F6FE;
+  padding: .8em;
+}
+
 /* Banner */
 
 .banner {
