@@ -16,7 +16,7 @@
 
 /*Nav*/
 
-nav a {
+nav li ul a {
   font-size: .8em;
   font-family: 'Arvo', serif;
   font-weight: 400;
