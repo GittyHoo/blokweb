@@ -14,9 +14,9 @@
   --main-backgroundcolor:white;
 }
 
-/*Nav icons*/
+/*Nav*/
 
-nav ul li a img {
+nav ul .navigation li a img{
   border-radius: 5em;
   background-color: #F1F6FE;
   padding: .8em;
