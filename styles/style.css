@@ -16,8 +16,11 @@
 
 /*Nav*/
 
-.navigation {
-  
+nav a {
+  font-size: .8em;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  color: var(--main-textcolor);
 }
 
 
