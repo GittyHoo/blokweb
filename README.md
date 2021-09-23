@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Luka Bronius
 
 #### Je startniveau:
-Mijn niveau ligt tussen het blauw en rood in.
+Mijn niveau ligt tussen het blauw en rood in, wel meer naar de blauwe kant dan naar de rode ;)
 
 #### Je focus:
 Ik zal me gaan focussen op de responsive van de website.
