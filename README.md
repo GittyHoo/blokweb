@@ -78,22 +78,12 @@ De deals pagina
 In het begin van het project was ikzelf erg enthousiast en had ik er ook erg veel zin in. Echter, nu dat we twee weken verder zijn is mijn enthousiasme veranderd in frustratie. De vele elementen en termen die terugkomen bij het coderen, verwarren mij erg snel. Hierdoor ben ik soms wel urenlang bezig geweest met ‘’gemakkelijke’’ code.  
 
 
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Nadat ik een gesprek had gehad met de docent, kreeg ik wat meer inzicht van wat ikzelf nou eigenlijk allemaal net verkeerd deed. Ik had mijn focus al te snel op het css bestand neergelegd, waardoor mijn html bestand eigenlijk een.. zooitje was. Hier kreeg ik erg bruikbare tips en feedback op.
 
-- punt 1
-- punt 2
-- nog een punt
+- Ik moest mij eerst gaan focussen op het corrigeren en verbeteren van mijn HTML bestand.
+- Ik moest elementen op een andere manier in het html bestand plaatsen, hiermee bedoel ik > goed nesten.
+- Ik moet beter opletten op het goed sluiten van elementen. 
 - ...
 
 </details>
@@ -108,26 +98,16 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+In de 2e week had ik een enorme sprong gemaakt. Mijn HTML was al een stuk verbeterd en meerendeels van de HTML bestand had ik al met het css bestand mooier opgemaakt.
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Tijdens het 2e voortgang gesprek kreeg ik weer hele bruikbare feedback van de docent.
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Ik gebruik te veel PX en EM's door elkaar, ik moet dit veranderen naar em's.
+- Ik gebruik te vaak position: relative/absolute, terwijl ik gemakkelijk de margin kan gebruiken.
+- Ik moet mijn classes op de parent plaatsen, en niet op een van de child's.
+- Ik kan in mijn css bestand sommige code korter en compacter schrijven.
+- Ik moet gaan beginnen met het maken van de hamburgermenu en de 2e webpagina.
 
 </details>
 
