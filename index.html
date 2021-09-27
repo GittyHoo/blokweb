@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="jouw naam">
+    <meta name="author" content="Luka B">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>bol.com</title>
@@ -20,19 +20,11 @@
 
     <header>
 
-        <!--Hulp gekreven van: https://codepen.io/huange/pen/rbqsD?editors=1100-->
-
-        <div class="balk">
-            <div class="search"><input type="text" class="searchTerm" placeholder="Waar ben je naar opzoek?"><a
-                    class="searchButton" href="index.html"><img src="images/search.png" alt="search icon">
-                </a></div>
-        </div>
-
-        <!--Alle icons in de NAV zijn van https://fonts.google.com/icons*/-->
+            <!--Alle icons in de NAV zijn van https://fonts.google.com/icons*/-->
 
         <nav>
-            <img class="hamburger" src="images/hamburger.png" alt="Hamburger">
-            <ul class="navigation">
+            <button ari-hidden="true"></button> <!--De hamburger button-->
+            <ul>
                 <li><a href="index.html"><img src="images/boekicon.png" alt="boeken">Boeken</a></li>
                 <li><a href="index.html"><img src="images/muziekicon.png" alt="muziek">Muziek, Film & Games</a></li>
                 <li><a href="index.html"><img src="images/computericon.png" alt="computer">Computer & Elektronica</a>
@@ -51,9 +43,25 @@
             </ul>
         </nav>
 
+        <a href="index.html"><img src="images/bol_logo.png" alt="Logo" id="logo" /></a>
+
+        <section class="header">
+            <ul>
+                <li><a href="index.html"><img src="images/profile.png" alt="profile"></a></li>
+                <li><a href="index.html"><img src="images/heart.png" alt="favorites"></a></li>
+                <li><a href="index.html"><img src="images/cart.png" alt="your cart"></a></li>
+            </ul>
+        </section>
+
     </header>
 
+<form>
+    <input type="search" placeholder="Waar ben je naar op zoek?">
+</form>
+
+
     <main>
+
         <section class="banner">
             <h2>De winkel van</h2>
             <h3>mode om in te leven</h3>
@@ -65,14 +73,14 @@
         <section class="catagory">
             <h2>Kies een catagorie</h2>
             <ul>
-                <li><a href="index.html"><img src="images/boeken.png" alt="boeken">Boeken</a></li>
-                <li><a href="index.html"><img src="images/elektronica.png" alt="elektronica">Elektronica</a></li>
-                <li><a href="index.html"><img src="images/speelgoed.png" alt="speelgoed">Speelgoed</a></li>
-                <li><a href="index.html"><img src="images/wonen.png" alt="wonen">Wonen</a></li>
-                <li><a href="index.html"><img src="images/baby.png" alt="baby">Baby</a></li>
-                <li><a href="index.html"><img src="images/koken.png" alt="koken">Koken & Tafelen</a></li>
-                <li><a href="index.html"><img src="images/beauty.png" alt="beauty">Beauty</a></li>
-                <li><a href="index.html"><img src="images/films.png" alt="films">Films & Series</a></li>
+                <li><a href="index.html"><img src="images/catagorie/1.jpg" alt="boeken">Boeken</a></li>
+                <li><a href="index.html"><img src="images/catagorie/2.jpg" alt="elektronica">Elektronica</a></li>
+                <li><a href="index.html"><img src="images/catagorie/3.jpg" alt="speelgoed">Speelgoed</a></li>
+                <li><a href="index.html"><img src="images/catagorie/4.jpg" alt="wonen">Wonen</a></li>
+                <li><a href="index.html"><img src="images/catagorie/5.jpg" alt="baby">Baby</a></li>
+                <li><a href="index.html"><img src="images/catagorie/6.jpg" alt="koken">Koken & Tafelen</a></li>
+                <li><a href="index.html"><img src="images/catagorie/7.jpg" alt="beauty">Beauty</a></li>
+                <li><a href="index.html"><img src="images/catagorie/8.jpg" alt="films">Films & Series</a></li>
             </ul>
         </section>
 
@@ -168,6 +176,18 @@
             </ul>
         </section>
 
+        <section class="Ontdek">
+
+            <h2>Ontdek alles bij bol.com</h2>
+
+            <nav class="subnav">
+            <ul>
+                <li><a href="index.html">Boeken</a></li>
+                <li><a href="index.html">Muziek, Film & Games</a></li>
+                <li><a href="index.html">Muziek, Film & Games</a></li>
+            </ul>
+        </nav>
+        </section>
 
     </main>
 
