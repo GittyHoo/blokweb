@@ -1,8 +1,8 @@
-var deButton = document.querySelector("nav button");
+var deButton = document.querySelector("Nav");
 
-deButton.addEventListener("click", toggleMenu);
+deButton.addEventListener("click", openMenu);
 
-function toggleMenu(event) {
+function openMenu(event) {
   deNav = event.target.parentNode;
-  deNav.classList.toggle("toonMenu");
+  deNav.classList.toggle("openMenu");
 }
