@@ -10,8 +10,8 @@
 
 :root {
   --main-color:rgb(0, 0, 164);
-  --main-textcolor:rgb(0, 0, 164);
-  --sub-textcolor:black;
+  --main-textcolor:black;
+  --sub-textcolor:rgb(0, 0, 164);
   --main-backgroundcolor:white;
 }
 
@@ -21,21 +21,23 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 1em;
-  margin-top: .5em;
+  margin-bottom: .5em;
+  margin-top: .2em;
 }
 
-section.header {
+section.icons {
   margin-top: 1em;
-  margin-left: .3em;
+  margin-left: auto;
+  margin-right: 1em;
+
 }
 
-section.header ul li img {
+section.icons ul li img {
   width: 2em;
-  margin-left: .6em;
+  margin:.4em;
 } 
 
-section.header ul {
+section.icons ul {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -88,7 +90,7 @@ nav a {
   font-size: .8em;
   font-family: 'Arvo', serif;
   font-weight: 400;
-  color: var(--sub-textcolor);
+  color: var(--main-textcolor);
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -105,10 +107,22 @@ nav a img{
   margin-right: 1em;
 }
 
-nav.toonMenu ul {
+nav.openMenu ul {
   transform:translatex(0%);
   left:0; right:0; top:0; bottom:0;
 }
+
+/*States of the nav links*/
+
+nav a:hover{
+  text-decoration: underline #0000A4;
+  }
+  
+  nav a:focus,
+  nav a:active{
+    color: var(--sub-textcolor);
+    text-decoration: underline #0000A4;
+  }
 
 /*input field / search bar*/
 
@@ -133,13 +147,29 @@ input {
   font-weight: 300;
 }
 
+/*States of the search bar*/
+
 input::placeholder {
-color: var(--main-textcolor);
+color: var(--sub-textcolor);
 opacity: 20%;
 }
 
+input[type="search"]{
+  position: relative;
+  padding-left: 4em;
+  background-image:url('../images/search.png');
+  background-repeat:no-repeat;
+  background-size:1.5em;
+  background-position:1em center;
+}
 
+input:hover{
+  background-color:#cee1ff ;
+}
 
+input:focus{
+  caret-color: var(--sub-textcolor);
+}
 
 /* Banner */
 
@@ -157,6 +187,7 @@ opacity: 20%;
   bottom: 1em;
  }
 
+
 .banner h2 {
   position: absolute;
   top: .5em;
@@ -164,7 +195,7 @@ opacity: 20%;
   font-size: 1.5em;
   font-family: 'Arvo', serif;
   font-weight: 700;
-  color: var(--main-textcolor);
+  color: var(--sub-textcolor);
 }
 
 .banner h3 {
@@ -174,31 +205,39 @@ opacity: 20%;
   font-size: 1.5em;
   font-family: 'Arvo', serif;
   font-weight: 300;
-  color: var(--main-textcolor);
+  color: var(--sub-textcolor);
 }
 
-/*Alle sections*/
-section {
-  position: relative;
-}
+/*catagory*/
 
-/*catagory + slide*/
+.catagory{
+  padding: 1em 1em 2em 1em;
+  margin-bottom: 1em;
+}
 
 .catagory ul{
   display: flex;
   flex-direction: row;
-  margin-top:1em;
-  margin-bottom: 3em;
   overflow: scroll;
   list-style-type: none;
   align-items: center;
   text-align: center;
 }
 
+.catagory img {
+  display: block;
+  width: 8em;
+  margin-bottom: .5em;
+}
+
 .catagory li a {
   text-decoration: none;
-  color: var(--sub-textcolor);
+  color: var(--main-textcolor);
   font-family: 'Arvo', serif;
+}
+
+.catagory li:first-of-type{
+  margin-left: 0;
 }
 
 .catagory li{
@@ -206,15 +245,30 @@ section {
 }
 
 .catagory h2 {
-  margin: 1em 1em .2em 1em;
+  margin-bottom: 1em;
   font-size: 1.125em;
   font-family: 'Arvo', serif;
 }
 
+/*catagory a states*/
+
+
+.catagory li a:hover,
+.catagory li a:focus,
+.catagory li a:active{
+  color: var(--sub-textcolor);
+  text-decoration: underline var(--main-color);
+}
+
 /*Nu trending*/
 
+.aanbevelingen {
+  padding: 1em 1em 1em 1em;
+  margin-bottom: 1em;
+}
+
 .aanbevelingen h2 {
-  margin: 1em 1em .2em 1em;
+  margin-bottom: .5em;
   font-size: 1.125em;
   font-family: 'Arvo', serif;
 }
@@ -228,7 +282,6 @@ section {
 }
 
 .pijl {
-  margin-left: 1em;
   margin-right: .2em;
   width: 11px;
   text-align: center;
@@ -237,18 +290,21 @@ section {
 .aanbevelingen ul{
   display: flex;
   flex-direction: row;
-  margin-top:1em;
-  margin-bottom: 3em;
   overflow: scroll;
   list-style-type:none;
+  margin-top: 1em;
 }
 
 .aanbevelingen li a {
   text-decoration: none;
-  color: var(--sub-textcolor);
+  color: var(--main-textcolor);
   font-family: 'Arvo', serif;
   font-weight: 700;
   font-size: .8em;
+}
+
+.aanbevelingen li:first-of-type{
+  margin-left: 0;
 }
 
 .aanbevelingen li {
@@ -263,50 +319,27 @@ section {
 }
 
 .aanbevelingen li a img {
+  display: block;
   width: 10em;
 }
 
-/*Voordeel en inspiratie*/
+/*persoonlijke aanbevelingen states*/
 
-.kortingen h2 {
-  margin: 1em 1em .2em 1em;
-  font-size: 1.125em;
-  font-family: 'Arvo', serif;
-}
-
-.kortingen ul {
-  display: flex;
-  flex-direction: row;
-  margin-top:1em;
-  margin-bottom: 3em;
-  overflow: scroll;
-  list-style-type: none;
-  align-items: center;
-  text-align: center;
-  overflow: auto;
-  list-style-type: none;
-  text-align: center;
-  margin-bottom: 3em;
-}
-
-.kortingen li a {
-  text-decoration: none;
-  color: var(--sub-textcolor);
-  font-family: 'Arvo', serif;
-}
-
-.kortingen li{
-  margin-left: 1em;
-}
-
-.kortingen ul li a img {
-  width: 14em;
+.tussentekst:hover,
+.tussentekst:active,
+.tussentekst:focus{
+  color:var(--sub-textcolor);
+  text-decoration: underline var(--main-color);
 }
 
 /*Cadeaus sectie*/
 
+.cadeaus {
+  padding: 1em 1em 1em 1em;
+}
+
 .cadeaus h2 {
-  margin: 1em 1em .2em 1em;
+  margin-bottom: 1em;
   font-size: 1.125em;
   font-family: 'Arvo', serif;
 }
@@ -315,31 +348,103 @@ section {
   display: flex;
   flex-direction: row;
   margin-top:1em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   overflow: scroll;
   list-style-type: none;
   align-items: center;
   text-align: center;
 }
 
-.cadeaus li a {
-  text-decoration: none;
-  color: var(--sub-textcolor);
-  font-family: 'Arvo', serif;
-}
-
 .cadeaus li {
   margin-left: 1em;
 }
 
+.cadeaus li:first-of-type{
+  margin-left: 0;
+}
+
+.cadeaus li a {
+  text-decoration: none;
+  color: var(--main-textcolor);
+  font-family: 'Arvo', serif;
+}
+
+.cadeaus a img {
+  display: block;
+  width: 14em;
+  margin-bottom: .5em;
+}
+
 .cadeaus a {
   text-decoration: none;
-  color: var(--sub-textcolor);
+  color: var(--main-textcolor);
   font-family: 'Arvo', serif;
   font-weight: 400;
 }
 
-.cadeaus a img {
-  width: 14em;
+/*cadeau states*/
+
+.cadeaus li a:hover,
+.cadeaus li a:active,
+.cadeaus li a:focus
+{
+  color:var(--sub-textcolor);
+  text-decoration: underline var(--main-color);
 }
 
+/*Interessant section*/
+
+.interessant{
+  position: relative;
+  padding: 1em 1em 2em 1em;
+}
+
+.interessant h2 {
+  margin-bottom: 1em;
+  font-size: 1.125em;
+  font-family: 'Arvo', serif;
+}
+
+.interessant ul {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  list-style-type: none;
+  align-items: left;
+  text-align: left;
+  overflow: auto;
+  list-style-type: none;
+  text-align: left;
+}
+
+.interessant li a {
+  text-decoration: none;
+  color: var(--main-textcolor);
+  font-family: 'Arvo', serif;
+  font-size: .8em;
+  max-width: 8em;
+}
+
+.interessant li{
+  margin-left: 1em;
+}
+
+.interessant li:first-of-type{
+  margin-left: 0;
+}
+
+.interessant ul li a img {
+  display: block;
+  width: 20em;
+  margin-bottom:.5em;
+}
+
+/*interessant sectie states*/
+
+.interessant li a:hover,
+.interessant li a:active,
+.interessant li a:focus
+{
+  color:var(--sub-textcolor);
+  text-decoration: underline var(--main-color);
+}
