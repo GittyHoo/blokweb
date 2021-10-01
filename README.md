@@ -40,10 +40,12 @@ Voor deze opdracht zal ik proberen om de website van bol.com na te maken. Ik heb
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Hoofdpagina
-<img src="images/breakdown_2.png" width="375px" alt="Hoofdpagina bol">
+<img src="images/bol4.png" width="375px" alt="Hoofdpagina bol">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-<img src="images/breakdown.png" width="375px" alt="mode pagina">
+<img src="images/breekdown.png" width="375px" alt="">
+ <img src="images/breekdown_2.png" width="375px" alt="">
+ <img src="images/breekdown_3.png" width="375px" alt="">
 </details>
 
 
@@ -55,11 +57,11 @@ Hoofdpagina
 <details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina + footer: 
-<img src="images/breakdown_bol.png" width="375px" alt="breakdown van de hele pagina">
+### de 1e pagina
+<img src="images/breakdown_2.png" width="375px" alt="Hoofdpagina bol">
  
  ### pagina 2: 
-<img src="images/breekdown.png" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown.png" width="375px" alt="mode pagina">
 
 </details>
 
