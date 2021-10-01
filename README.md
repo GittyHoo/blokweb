@@ -40,7 +40,7 @@ Voor deze opdracht zal ik proberen om de website van bol.com na te maken. Ik heb
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Hoofdpagina
-<img src="images/bol.png" width="375px" alt="Hoofdpagina bol">
+<img src="images/breakdown_2.png" width="375px" alt="Hoofdpagina bol">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 <img src="images/breakdown.png" width="375px" alt="mode pagina">
