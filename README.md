@@ -46,6 +46,7 @@ Hoofdpagina
 <img src="images/breekdown.png" width="375px" alt="">
  <img src="images/breekdown_2.png" width="375px" alt="">
  <img src="images/breekdown_3.png" width="375px" alt="">
+  <img src="images/breekdown_4.png" width="375px" alt="">
 </details>
 
 
