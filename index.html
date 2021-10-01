@@ -1,238 +1,606 @@
-<!doctype html>
-<html lang="nl">
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Luka B">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+* {
+  padding: 0;
+  margin: 0;
+}
 
-    <title>bol.com</title>
+:root {
+  --main-color:rgb(0, 0, 164);
+  --main-textcolor:black;
+  --sub-textcolor:rgb(0, 0, 164);
+  --main-backgroundcolor:white;
+  --sub-backgroundcolor:rgb(0, 0, 164);
+}
 
-    <link href="styles/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-</head>
+/*Header + header iconen*/
 
-<body>
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: .5em;
+  margin-top: .2em;
+}
 
-    <header>
+section.icons {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: 1em;
 
-        <!--Alle icons in de NAV zijn van https://fonts.google.com/icons*/-->
+}
 
-        <nav>
+section.icons ul li img {
+  width: 2em;
+  margin:.4em;
+} 
 
-            <!--De hamburger button-->
+section.icons ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
 
-            <button ari-hidden="true"></button>
+#logo {
+  height: 2.3125em;
+  margin-left: .1em;
+}
 
-            <ul>
-                <li><a href="index.html"><img src="images/boekicon.png" alt="boeken">Boeken</a></li>
-                <li><a href="index.html"><img src="images/muziekicon.png" alt="muziek">Muziek, Film & Games</a></li>
-                <li><a href="index.html"><img src="images/computericon.png" alt="computer">Computer & Elektronica</a>
-                </li>
-                <li><a href="index.html"><img src="images/toyicon.png" alt="Speelgoed">Speelgoed & Hobby</a></li>
-                <li><a href="index.html"><img src="images/babyicon.png" alt="Baby">Baby & Kind</a></li>
-                <li><a href="index.html"><img src="images/mooiicon.png" alt="Mooi">Mooi & Gezond</a></li>
-                <li><a href="index.html"><img src="images/kledingicon.png" alt="Kleding">Kleding, Schoenen &
-                        Accessoires</a></li>
-                <li><a href="index.html"><img src="images/sporticon.png" alt="Sport">Sport, Outdoor & Reizen</a></li>
-                <li><a href="index.html"><img src="images/schoolicon.png" alt="School">Kantoor & School</a></li>
-                <li><a href="index.html"><img src="images/drankicon.png" alt="Drank">Dranken & Delicatessen</a></li>
-                <li><a href="index.html"><img src="images/homeicon.png" alt="Huis">Wonen, Koken & Huishouden</a></li>
-                <li><a href="index.html"><img src="images/klussenicon.png" alt="Klussen">Dier, Tuin & Klussen</a></li>
-                <li><a href="index.html"><img src="images/caricon.png" alt="Auto">Auto & Motor</a></li>
-            </ul>
-        </nav>
+/*Nav hamburger*/
 
-        <a href="index.html"><img src="images/bol_logo.png" alt="Logo" id="logo" /></a>
+nav button {
+  width:5em;
+  height: 1em;
+  background-color:white;
+  border:none;
+  position:relative;
+  z-index:100;
+}
 
-        <section class="icons">
-            <ul>
-                <li><a href="index.html"><img src="images/profile.png" alt="profile"></a></li>
-                <li><a href="index.html"><img src="images/heart.png" alt="favorites"></a></li>
-                <li><a href="index.html"><img src="images/cart.png" alt="your cart"></a></li>
-            </ul>
-        </section>
+nav button::before {
+  color: #0000A4;
+  content:"\2630 "; /*code voor hamburger icoon*/
+  font-size: 2em;
+}
 
-    </header>
+/*Nav UL, gebruik gemaakt van: https://codepen.io/shooft/pen/yLXzvaM*/
 
-    <form>
-        <input type="search" placeholder="Waar ben je naar op zoek?">
-    </form>
+nav ul {
+  display: grid;
+  position:fixed;
+  background:white;
 
+  transform:translatex(-100%);
+  z-index:50;
+  transition:.5s;
+  padding-top: 4em;
+  padding-left: 1.3em;
+  margin-top: 0;
 
-    <main>
-
-        <section class="banner">
-            <h2>De winkel van</h2>
-            <h3>mode om in te leven</h3>
-            <a class="subbutton" href="sale.html">
-                <img src="images/google.button.png" alt="button">
-            </a>
-        </section>
-
-        <section class="catagory">
-            <h2>Kies een catagorie</h2>
-            <ul>
-                <li><a href="index.html"><img src="images/1.jpg" alt="boeken">Boeken</a></li>
-                <li><a href="index.html"><img src="images/2.jpg" alt="elektronica">Elektronica</a></li>
-                <li><a href="index.html"><img src="images/3.jpg" alt="speelgoed">Speelgoed</a></li>
-                <li><a href="index.html"><img src="images/4.jpg" alt="wonen">Wonen</a></li>
-                <li><a href="index.html"><img src="images/5.jpg" alt="baby">Baby</a></li>
-                <li><a href="index.html"><img src="images/6.jpg" alt="koken">Koken</a></li>
-                <li><a href="index.html"><img src="images/7.jpg" alt="beauty">Beauty</a></li>
-                <li><a href="index.html"><img src="images/8.jpg" alt="films">Films & Series</a></li>
-            </ul>
-        </section>
+  left:0; right:0; top:0; bottom:0;
+}
 
 
-        <section class="aanbevelingen">
-            <h2>Nu trending</h2>
-            <a class="tussentekst" href="index.html"><img class="pijl" src="images/pijl.png" alt="pijl">Bekijk al je
-                persoonlijke aanbevelingen</a>
+nav ul li {
+  list-style-type:none;
+}
 
-            <!--Al deze producten heb ik van bol.com gepakt*/-->
+nav a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  font-size: .8em;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  color: var(--main-textcolor);
+  text-decoration: none;
+}
 
-            <ul>
-                <li><a href="index.html"><img src="images/producten.png" alt="Braun series">Braun Series 9 9325s<p>
-                            €207,58
-                        </p></a></li>
-                <li><a href="index.html"><img src="images/producten6.png" alt="Samsung">Samsung Galaxy A12 - 128GB<p>
-                            €204,95
-                        </p></a></li>
-                <li><a href="index.html"><img src="images/producten4.png" alt="Boek">De liefdesbrief<p>€21,99</p></a>
-                </li>
-                <li><a href="index.html"><img src="images/producten3.png" alt="Earphones">Samsung Type-C Earphones -
-                        Black
-                        <p>€15,00</p>
-                    </a></li>
-                <li><a href="index.html"><img src="images/producten5.png" alt="Planner">Mascha Planner Special Blue
-                        Edition
-                        <p>€24,95</p>
-                    </a></li>
-                <li><a href="index.html"><img src="images/producten2.png" alt="Samsung">Samsung LS24R350<p>€119,00</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
+nav a img{
+  border-radius: 5em;
+  background-color: #F1F6FE;
+  padding: .8em;
+  width: 3.125em;
+  margin-right: 1em;
+}
 
-        <section class="cadeaus">
-            <h2>Cadeaus voor iedereen</h2>
+nav.openMenu ul {
+  transform:translatex(0%);
+  left:0; right:0; top:0; bottom:0;
+}
 
-            <!--Al deze kleurvlakken zijn afkomstig van bol.com/-->
+/*States of the nav links*/
 
-            <ul>
-                <li><a href="index.html"><img src="images/dames.png" alt="Dames">Cadeaus voor haar</a></li>
-                <li><a href="index.html"><img src="images/heren.png" alt="Heren">Cadeaus voor hem</a></li>
-                <li><a href="index.html"><img src="images/goedecadeaus.png" alt="Goede cadeaus">Altijd goede cadeaus</a>
-                </li>
-                <li><a href="index.html"><img src="images/verassendecadeaus.png" alt="verassendecadeaus">Verassende
-                        cadeaus</a></li>
-            </ul>
+nav a:hover{
+  text-decoration: underline #0000A4;
+  }
+  
+  nav a:focus,
+  nav a:active{
+    color: var(--sub-textcolor);
+    text-decoration: underline #0000A4;
+  }
 
-        </section>
+/*input field / search bar*/
 
-        <section class="aanbevelingen">
+form {
+  padding: 1em;
+  background-color: rgb(0, 0, 164);
+}
 
-            <h2>Populair bij bol.com</h2>
-            <a class="tussentekst" href="index.html"><img class="pijl" src="images/pijl.png" alt="pijl">Bekijk al je
-                persoonlijke aanbevelingen</a>
+input {
+  border-radius: 5em;
+  border: none;
+  outline: none;
+  appearance: none;
+  width: 100%;
+  height: 3em;
 
-            <ul>
-                <li><a href="index.html"><img src="images/producten7.png" alt="Pokemon kaarten">
-                        Pokémon Sword & Shield Evolving Skies Sleeved Booster<p>€5,99</p></a></li>
-                <li><a href="index.html"><img src="images/producten8.png" alt="Apple Airpods">Apple AirPods 2 - met
-                        reguliere oplaadcase<p>€125,95</p></a></li>
-                <li><a href="index.html"><img src="images/producten9.png" alt="Chromecast">Google Chromecast 3 Smart<p>
-                            €36,00</p></a></li>
-                <li><a href="index.html"><img src="images/producten10.png" alt="Fifa">FIFA 22 - PS4<p>€54,99</p></a>
-                </li>
-                <li><a href="index.html"><img src="images/producten11.png" alt="Planner">Rekenmachine TI-84 PLUS CE-T<p>
-                            €102,99</p></a></li>
-                <li><a href="index.html"><img src="images/producten12.png" alt="Samsung">Norton 360 Deluxe<p>€69,99</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
+  text-align: left;
+  padding: 1em;
+  font-size: 1em;
+  font-family: 'Arvo', serif;
+  font-weight: 300;
+}
 
-        <section class="interessant">
-            <h2>Ook interessant</h2>
+/*States of the search bar*/
 
-            <!--Alle producten heb ik van bol.com gepakt*/-->
+input::placeholder {
+color: var(--sub-textcolor);
+opacity: 20%;
+}
 
-            <ul>
-                <li><a href="index.html"><img src="images/mode.png" alt="Mode"><strong>Shop de nieuwe mode
-                            collectie</strong>
-                        <p>de winkel van mode om te leven</p>
-                    </a></li>
-                <li><a href="index.html"><img src="images/biodermal.jpg" alt="Biodermal"><strong>Nieuw van
-                            Biodermal</strong>
-                        <p>Skin serum Boosters en P-CL-E Bodylotion</p>
-                    </a></li>
-                <li><a href="index.html"><img src="images/dierendag.jpg" alt="dierendag"><strong>4 oktober is
-                            Dierendag</strong>
-                        <p>geef je (huis)dier extra aandacht</p>
-                    </a></li>
-            </ul>
+input[type="search"]{
+  position: relative;
+  padding-left: 4em;
+  background-image:url('../images/search.png');
+  background-repeat:no-repeat;
+  background-size:1.5em;
+  background-position:1em center;
+}
 
-        </section>
+input:hover{
+  background-color:#cee1ff ;
+}
+
+input:focus{
+  caret-color: var(--sub-textcolor);
+}
+
+/* Banner */
+
+.banner {
+  position: relative;
+  background: linear-gradient( to bottom, #f279ab, #ea6097, #de457e);
+  width: 100%;
+  height: 12em;
+}
+
+.banner a img {
+  position: absolute;
+  width: 2.1875em;
+  left: 1.08em;
+  bottom: 1em;
+ }
 
 
+.banner h2 {
+  position: absolute;
+  top: .5em;
+  left: 1em;
+  font-size: 1.5em;
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  color: var(--sub-textcolor);
+}
 
-    </main>
+.banner h3 {
+  position: absolute;
+  top: 1.6em;
+  left: 1em;
+  font-size: 1.5em;
+  font-family: 'Arvo', serif;
+  font-weight: 300;
+  color: var(--sub-textcolor);
+}
 
-    <footer>
-        <section class="service">
-            <h2>Service & contact</h2>
-            <ul>
-                <li>
-                    <img src="images/profile_white.png" alt="profile">
-                    <p><strong>Snel regelen in je account</p></strong>
-                    <p> <a href="index.html">Volg je bestelling</a>, <a href="index.html">betaal facturen</a> of
-                        <a href="index.html">retourneer een artikel</a>.
-                    </p>
-                </li>
-                <li>
-                    <img src="images/chat.png" alt="chat">
-                    <p><strong>Heb je hulp nodig?</p></strong>
-                    <p>We helpen je graag. <a href="index.html">Onze klantenservice</a> is dag en nacht open.</p>
-                </li>
-            </ul>
-        </section>
+/*catagory*/
 
-        <section class="socials">
-            <h2>Wil je ons volgen?</h2>
-            <ul>
-                <li><a href="https://www.facebook.com/bolpuntcom"><img src="images/icons_-01.png" alt="facebook"></a>
-                </li>
-                <li><a href="https://twitter.com/bol_com"><img src="images/icons_-02.png" alt="twitter"></a></li>
-                <li><a href="https://nl.pinterest.com/bolpuntcom/"><img src="images/icons_-03.png" alt="pinterest"></a>
-                </li>
-                <li><a href="https://nl.pinterest.com/bolpuntcom/"><img src="images/icons_-04.png" alt="instagram"></a>
-                </li>
-                <li><a href="https://www.youtube.com/user/bolcom"><img src="images/icons_-05.png" alt="youtube"></a>
-                </li>
-            </ul>
+.catagory{
+  padding: 1em 1em 2em 1em;
+  margin-bottom: 1em;
+}
 
-            <p> <a href="index.html">Meld je aan</a> voor onze nieuwsbrief</p>
+.catagory ul{
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
+}
 
-        </section>
+.catagory img {
+  display: block;
+  width: 8em;
+  margin-bottom: .5em;
+}
 
-        <section class="logo">
-            <img src="images/bol_logo_2.png" alt="bol.com logo">
-            <p>* De voordelen van bol.com gelden niet voor het gehele assortiment.
-                <a href="index.html">Bekijk de voorwaarden.</a>
-                Alle prijzen zijn inclusief BTW en andere heffingen en exclusief eventuele
-                <a href="index.html">verzendkosten</a> en <a href="index.html">servicekosten</a>.
-            </p>
-        </section>
+.catagory li a {
+  text-decoration: none;
+  color: var(--main-textcolor);
+  font-family: 'Arvo', serif;
+}
 
-    </footer>
+.catagory li:first-of-type{
+  margin-left: 0;
+}
 
-    <script src="scripts/script.js"></script>
-</body>
+.catagory li{
+  margin-left: 1em;
+}
 
-</html>
+.catagory h2 {
+  margin-bottom: 1em;
+  font-size: 1.125em;
+  font-family: 'Arvo', serif;
+}
+
+/*catagory a states*/
+
+
+.catagory li a:hover {
+  text-decoration: underline var(--main-color);
+}
+
+.catagory li a:focus,
+.catagory li a:active{
+  color: var(--sub-textcolor);
+  text-decoration: underline var(--main-color);
+}
+
+/*Nu trending*/
+
+.aanbevelingen {
+  padding: 1em 1em 1em 1em;
+  margin-bottom: 1em;
+}
+
+.aanbevelingen h2 {
+  margin-bottom: .5em;
+  font-size: 1.125em;
+  font-family: 'Arvo', serif;
+}
+
+.tussentekst {
+  text-decoration: none;
+  color: #00f;
+  font-family: 'Arvo', serif;
+  font-weight: 300;
+  font-size: .875em;
+}
+
+.pijl {
+  margin-right: .2em;
+  width: 11px;
+  text-align: center;
+}
+
+.aanbevelingen ul{
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  list-style-type:none;
+  margin-top: 1em;
+}
+
+.aanbevelingen li a {
+  text-decoration: none;
+  color: var(--main-textcolor);
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  font-size: .8em;
+}
+
+.aanbevelingen li:first-of-type{
+  margin-left: 0;
+}
+
+.aanbevelingen li {
+  margin-left: 1em;
+}
+
+.aanbevelingen li a p {
+  margin-top: 1em;
+  color: red;
+  font-family: 'Arvo', serif;
+  font-weight: 300;
+}
+
+.aanbevelingen li a img {
+  display: block;
+  width: 10em;
+}
+
+/*persoonlijke aanbevelingen states*/
+
+.tussentekst:hover{
+  text-decoration: underline var(--main-color);
+}
+
+.tussentekst:active,
+.tussentekst:focus{
+  color:var(--sub-textcolor);
+  text-decoration: underline var(--main-color);
+}
+
+.aanbevelingen li a:hover{
+  text-decoration: underline black;
+}
+
+.aanbevelingen li a:active,
+.aanbevelingen li a:focus{
+  color:var(--sub-textcolor);
+  text-decoration: underline black;
+}
+
+/*Cadeaus sectie*/
+
+.cadeaus {
+  padding: 1em 1em 1em 1em;
+}
+
+.cadeaus h2 {
+  margin-bottom: 1em;
+  font-size: 1.125em;
+  font-family: 'Arvo', serif;
+}
+
+.cadeaus ul {
+  display: flex;
+  flex-direction: row;
+  margin-top:1em;
+  margin-bottom: 1em;
+  overflow: scroll;
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
+}
+
+.cadeaus li {
+  margin-left: 1em;
+}
+
+.cadeaus li:first-of-type{
+  margin-left: 0;
+}
+
+.cadeaus li a {
+  text-decoration: none;
+  color: var(--main-textcolor);
+  font-family: 'Arvo', serif;
+}
+
+.cadeaus a img {
+  display: block;
+  width: 14em;
+  margin-bottom: .5em;
+}
+
+.cadeaus a {
+  text-decoration: none;
+  color: var(--main-textcolor);
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+}
+
+/*cadeau states*/
+
+.cadeaus li a:hover{
+  text-decoration: underline var(--main-color);
+}
+
+.cadeaus li a:active,
+.cadeaus li a:focus{
+  color:var(--sub-textcolor);
+  text-decoration: underline var(--main-color);
+}
+
+/*Interessant section*/
+
+.interessant{
+  position: relative;
+  padding: 1em 1em 2em 1em;
+}
+
+.interessant h2 {
+  margin-bottom: 1em;
+  font-size: 1.125em;
+  font-family: 'Arvo', serif;
+}
+
+.interessant ul {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  list-style-type: none;
+  text-align: left;
+  overflow: auto;
+  list-style-type: none;
+  text-align: left;
+}
+
+.interessant li a {
+  text-decoration: none;
+  color: var(--main-textcolor);
+  font-family: 'Arvo', serif;
+  font-size: .8em;
+  max-width: 8em;
+}
+
+.interessant li{
+  margin-left: 1em;
+}
+
+.interessant li:first-of-type{
+  margin-left: 0;
+}
+
+.interessant ul li a img {
+  display: block;
+  width: 20em;
+  margin-bottom:.5em;
+}
+
+/*interessant states*/
+
+.interessant li a:hover{
+  text-decoration: underline var(--main-color);
+}
+
+.interessant li a:active,
+.interessant li a:focus{
+  color:var(--sub-textcolor);
+  text-decoration: underline var(--main-color);
+}
+
+/*footer > service blok*/
+
+.service{
+  padding:1em;
+  background-color: var(--sub-backgroundcolor);
+}
+
+.service h2{
+  margin-top: 1em;
+  margin-bottom: 1.8em;
+  color: white;
+  font-family: 'Arvo', serif;
+  font-size: 1.125em;
+}
+
+.service ul {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-align:left;
+  flex-wrap: wrap;
+  color: #fff;
+  list-style-type:none;
+}
+
+.service ul li {
+  margin-bottom: 2em;
+}
+
+.service ul li img {
+  flex-direction: row;
+  float: left;
+  width: 4em;
+  margin-right: 1.5em;
+}
+
+.service ul li a {
+  color: white;
+}
+
+.service ul li p {
+  font-family: 'Arvo', serif;
+  font-size: 0.875em;
+  align-content: center;
+  align-items: center;
+  line-height: 1.2em;
+  margin-bottom: .5em;
+}
+
+/*footer > social media*/
+
+.socials {
+  padding: 2.5em 0em 2.5em 0em;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.socials h2{
+  font-family: 'Arvo', serif;
+  font-size: 1.125em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.socials ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials ul li:first-of-type{
+  margin-left: 0;
+}
+
+.socials ul li {
+  list-style-type: none;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+.socials ul li a img {
+  width:2em;
+}
+
+.socials p{
+  font-family: 'Arvo', serif;
+  font-size: .8em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.socials p a {
+  color: var(--sub-textcolor);
+  text-decoration: none;
+}
+
+/*socials states*/
+
+.socials p a:hover,
+.socials p a:focus,
+.socials p a:active{
+  text-decoration: underline;
+}
+
+/*beneden logo + voorwaarden text*/
+
+section.logo{
+  padding: 1.5em 0em 2.5em 0em;
+  border-bottom: 1px solid #e6e6e6;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.logo img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  width: 15em;
+}
+
+section.logo p{
+  font-family: 'Arvo', serif;
+  font-size: .625em;
+  text-align: center;
+}
+
+section.logo a{
+  color: var(--sub-textcolor);
+  text-decoration: none;
+}
+
+section.logo a:hover,
+section.logo a:focus,
+section.logo a:active{
+  text-decoration: underline var(--sub-textcolor);
+}
