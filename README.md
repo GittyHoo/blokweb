@@ -43,11 +43,7 @@ Hoofdpagina
 <img src="images/bol.png" width="375px" alt="Hoofdpagina bol">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-<img src="images/breekdown.png" width="375px" alt="mode pagina">
-<img src="images/breekdown_2.png" width="375px" alt="mode pagina">
-<img src="images/breekdown_3.png" width="375px" alt="mode pagina">
-<img src="images/breekdown_4.png" width="375px" alt="mode pagina">
- 
+<img src="images/breakdown.png" width="375px" alt="mode pagina">
 </details>
 
 
