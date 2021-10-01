@@ -43,7 +43,6 @@ Hoofdpagina
 <img src="images/bol.png" width="375px" alt="Hoofdpagina bol">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-De deals pagina
 <img src="images/breekdown.png" width="375px" alt="mode pagina">
 <img src="images/breekdown_2.png" width="375px" alt="mode pagina">
 <img src="images/breekdown_3.png" width="375px" alt="mode pagina">
@@ -125,29 +124,18 @@ Tijdens het 2e voortgang gesprek kreeg ik weer hele bruikbare feedback van de do
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
+- Ik zag dat ik hier en daar nog een aantal: states, mistte, zoals bij links (a's).
+- Ook zag ik dat mijn button in de banner niet gezien werd als je door de website heen tabt' 
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### States toevoegen
+<img src="images/bevinding.png" width="375px" alt="">
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Deze Li's (a's) hadden eerst geen underline als je over de foto/tekst heen hover'de, dit heb ik opgelost doormiddel van states toe te voegen aan dit element.
 
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Banner
+<img src="images/bevinding2.png" width="375px" alt="">
+ 
+Hier zie je de banner die aan de top staat van mijn pagina. Ik heb hier (nog) geen oplossing voor. 
 
 </details>
 
