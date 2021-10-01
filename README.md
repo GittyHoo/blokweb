@@ -44,7 +44,10 @@ Hoofdpagina
 
 #### Screenshot(s) van de tweede pagina (small screen):
 De deals pagina
-<img src="images/bol2.png" width="375px" alt="boeken pagina">
+<img src="images/breekdown.png" width="375px" alt="mode pagina">
+<img src="images/breekdown_2.png" width="375px" alt="mode pagina">
+<img src="images/breekdown_3.png" width="375px" alt="mode pagina">
+<img src="images/breekdown_4.png" width="375px" alt="mode pagina">
  
 </details>
 
@@ -61,7 +64,7 @@ De deals pagina
 <img src="images/breakdown_bol.png" width="375px" alt="breakdown van de hele pagina">
  
  ### pagina 2: 
-<img src="images/breakdown_bol2.png" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breekdown.png" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
