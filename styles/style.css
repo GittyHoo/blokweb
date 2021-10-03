@@ -57,7 +57,6 @@ nav button {
   background-color:white;
   border:none;
   position:relative;
-  top: 0;
   z-index:100;
 }
 
@@ -80,6 +79,8 @@ nav ul {
   padding-top: 4em;
   padding-left: 1.3em;
   margin-top: 0;
+
+  left:0; right:0; top:0; bottom:0;
 }
 
 
