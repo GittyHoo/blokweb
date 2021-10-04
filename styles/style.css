@@ -35,7 +35,7 @@ section.icons {
 
 section.icons ul li img {
   width: 2em;
-  margin:.4em;
+  margin:.2em;
 } 
 
 section.icons ul {
@@ -82,7 +82,6 @@ nav ul {
 
   left:0; right:0; top:0; bottom:0;
 }
-
 
 nav ul li {
   list-style-type:none;
@@ -187,12 +186,11 @@ input:focus{
   bottom: 1em;
  }
 
-
 .banner h2 {
   position: absolute;
   top: .5em;
-  left: 1em;
-  font-size: 1.5em;
+  left: .6em;
+  font-size: 1.8em;
   font-family: 'Arvo', serif;
   font-weight: 700;
   color: var(--sub-textcolor);
@@ -200,9 +198,9 @@ input:focus{
 
 .banner h3 {
   position: absolute;
-  top: 1.6em;
-  left: 1em;
-  font-size: 1.5em;
+  top: 1.5em;
+  left: .6em;
+  font-size: 1.8em;
   font-family: 'Arvo', serif;
   font-weight: 300;
   color: var(--sub-textcolor);
@@ -215,10 +213,16 @@ input:focus{
   margin-bottom: 1em;
 }
 
+.catagory h2 {
+  margin-bottom: 1em;
+  font-size: 1.125em;
+  font-family: 'Arvo', serif;
+}
+
 .catagory ul{
   display: flex;
   flex-direction: row;
-  overflow: scroll;
+  overflow: auto;
   list-style-type: none;
   align-items: center;
   text-align: center;
@@ -244,14 +248,7 @@ input:focus{
   margin-left: 1em;
 }
 
-.catagory h2 {
-  margin-bottom: 1em;
-  font-size: 1.125em;
-  font-family: 'Arvo', serif;
-}
-
 /*catagory a states*/
-
 
 .catagory li a:hover {
   text-decoration: underline var(--main-color);
@@ -293,7 +290,7 @@ input:focus{
 .aanbevelingen ul{
   display: flex;
   flex-direction: row;
-  overflow: scroll;
+  overflow: auto;
   list-style-type:none;
   margin-top: 1em;
 }
@@ -365,7 +362,7 @@ input:focus{
   flex-direction: row;
   margin-top:1em;
   margin-bottom: 1em;
-  overflow: scroll;
+  overflow: auto;
   list-style-type: none;
   align-items: center;
   text-align: center;
@@ -383,19 +380,13 @@ input:focus{
   text-decoration: none;
   color: var(--main-textcolor);
   font-family: 'Arvo', serif;
+  font-weight: 400;
 }
 
 .cadeaus a img {
   display: block;
   width: 14em;
   margin-bottom: .5em;
-}
-
-.cadeaus a {
-  text-decoration: none;
-  color: var(--main-textcolor);
-  font-family: 'Arvo', serif;
-  font-weight: 400;
 }
 
 /*cadeau states*/
@@ -477,7 +468,7 @@ input:focus{
 
 .service h2{
   margin-top: 1em;
-  margin-bottom: 1.8em;
+  margin-bottom: 1.3em;
   color: white;
   font-family: 'Arvo', serif;
   font-size: 1.125em;
@@ -491,10 +482,11 @@ input:focus{
   flex-wrap: wrap;
   color: #fff;
   list-style-type:none;
+  margin-bottom: 2em;
 }
 
 .service ul li {
-  margin-bottom: 2em;
+  margin-top: 1.5em;
 }
 
 .service ul li img {
@@ -604,3 +596,297 @@ section.logo a:focus,
 section.logo a:active{
   text-decoration: underline var(--sub-textcolor);
 }
+
+/*einde van pagina 1, begin van de mode pagina*/
+
+.banner_mode {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( to bottom, #f279ab, #ea6097, #de457e);
+  width: 100%;
+  height: 35em;
+}
+
+.banner_mode h2{
+  margin-top: 1em;;
+  font-size: 2.4em;
+  font-family: 'Arvo', serif;
+  font-weight: 900;
+  color: var(--sub-textcolor);
+  text-align: center;
+}
+
+.banner_mode h3 {
+  font-size: 2em;
+  font-family: 'Arvo', serif;
+  font-weight: 100;
+  color: var(--sub-textcolor);
+  text-align: center;
+}
+
+.banner_mode img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1.65em;
+  width: 25em;
+  text-align: center;
+}
+
+/*catagorie mode*/
+
+.catagorie_mode{
+padding: 1.5em 0em 2.2em 0em;
+}
+
+.catagorie_mode h2{
+  margin-top:1em;
+  margin-bottom:.5em;
+  color: var(--sub-textcolor);
+  font-family: 'Arvo', serif;
+  font-size: 2em;
+}
+
+.catagorie_mode > ul{
+  margin: 0;
+  padding: 0;
+  list-style-type:none;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  gap:1em;
+}
+
+.catagorie_mode li ul{ 
+list-style-type: none;
+}
+
+.catagorie_mode ul li a{
+  text-decoration: none;
+  color: var(--sub-textcolor);
+  font-family: 'Arvo', serif;
+  line-height: 2em;
+}
+
+.catagorie_mode h3{
+  color: var(--sub-textcolor);
+  font-family: 'Arvo', serif;
+  font-size: 1.5em;
+  margin-top: em;
+  margin-bottom: .5em;
+}
+
+/*a mode states*/
+ul li a:hover,
+ul li a:focus,
+ul li a:active{
+  text-decoration: underline;
+}
+
+/*Trends*/
+.trends{ /*de container*/
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  background-color:#ffeedd;
+  width:auto;
+  }
+
+
+.trends h2{
+    color: var(--sub-textcolor);
+    font-family: 'Arvo', serif;
+    font-size: 2em;
+    margin-bottom:.5em;
+  }
+
+.trends ul{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  display:flex;
+  overflow:auto;
+  gap:1em;
+}
+
+.trends li{
+display: flex;
+flex-direction: column;
+} 
+
+.trends a:nth-of-type(1){
+order:-1;
+}
+
+.trends img{
+  width:20em;
+}
+
+.trends h3{
+  margin-top:.5em;
+  margin-bottom:.5em;
+  color: var(--sub-textcolor);
+  font-family: 'Arvo', serif;
+  font-size: 1.2em;
+}
+
+.trends p{
+  margin-top:.5em;
+  margin-bottom:.5em;
+  color: var(--sub-textcolor);
+  font-family: 'Arvo', serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.subbutton img{
+  margin-top:.5em;
+  width:2.1875em;
+}
+
+.subbutton img:hover,
+.subbutton img:focus,
+.subbutton img:active{
+  border: solid white;
+}
+
+/*zoek op product*/
+.zoek{
+  padding: 1em 1em 2em 1em;
+  margin-bottom: 1em;
+}
+
+.zoek h2 {
+  color: var(--sub-textcolor);
+  font-family: 'Arvo', serif;
+  font-size: 2em;
+  margin-top:1em;
+  margin-bottom:.8em;
+}
+
+.zoek ul{
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
+}
+
+.zoek img {
+  display: block;
+  width: 8em;
+  margin-bottom: .5em;
+  border-radius: 10em;
+}
+
+.zoek li a {
+  text-decoration: none;
+  color: var(--sub-textcolor);
+  font-family: 'Arvo', serif;
+}
+
+.zoek li:first-of-type{
+  margin-left: 0;
+}
+
+.zoek li{
+  margin-left: 1em;
+}
+
+/*zoek a states*/
+
+.zoek li a:hover {
+  text-decoration: underline var(--main-color);
+}
+
+.zoek li a:focus,
+.zoek li a:active{
+  color: var(--sub-textcolor);
+  text-decoration: underline var(--main-color);
+}
+
+
+/*Responsive*/
+
+@media (min-width:38em){
+  body{
+    margin:auto;
+    width: 38em;
+  }
+
+@media (min-width:54em){
+  body{
+    margin:auto;
+    width: 54em;
+  }
+
+  .banner h2{
+    top: .3em;
+    left: .5em;
+    font-size: 2.3em;
+  }
+
+  .banner h3 {
+    top: 1.5em;
+    left: .5em;
+    font-size: 2.3em;
+  }
+  .catagory h2,
+  .aanbevelingen h2,
+  .cadeaus h2,
+  .interessant h2,
+  .service h2,
+  .socials h2 {
+    font-size: 1.4em;
+  }
+
+  .service h2 {
+    margin-left: .4em;
+  }
+  }
+  
+}
+
+@media (min-width:70em){
+  body{
+    margin:auto;
+    width: 70em;
+  }
+
+  nav a {
+    font-size: 1em;
+  }  
+
+Header{
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+  #logo {
+    height: 3em;
+    margin-left: .1em;
+  }
+
+  section.icons ul li img {
+    width: 2.5em;
+  } 
+
+.aanbevelingen li a,
+.catagory li a,
+.cadeaus li a,
+.interessant li a{
+  font-size:1em;
+}
+
+.socials p a {
+  font-size:1.1em;
+}
+
+}
+
+@media (min-width:88em){
+  body{
+    margin:auto;
+    width: 88em;
+  }
+}
+
