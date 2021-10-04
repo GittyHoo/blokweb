@@ -33,9 +33,9 @@ section.icons {
 
 }
 
-section.icons ul li img {
-  width: 2em;
-  margin:.2em;
+section.icons img {
+  width: 1.7em;
+  margin:.08em;
 } 
 
 section.icons ul {
@@ -45,7 +45,7 @@ section.icons ul {
 }
 
 #logo {
-  height: 2.3125em;
+  height: 2em;
   margin-left: .1em;
 }
 
@@ -63,7 +63,7 @@ nav button {
 nav button::before {
   color: #0000A4;
   content:"\2630 "; /*code voor hamburger icoon*/
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 /*Nav UL, gebruik gemaakt van: https://codepen.io/shooft/pen/yLXzvaM*/
@@ -78,7 +78,6 @@ nav ul {
   transition:.5s;
   padding-top: 4em;
   padding-left: 1.3em;
-  margin-top: 0;
 
   left:0; right:0; top:0; bottom:0;
 }
@@ -383,7 +382,7 @@ input:focus{
   font-weight: 400;
 }
 
-.cadeaus a img {
+.cadeaus img {
   display: block;
   width: 14em;
   margin-bottom: .5em;
@@ -417,12 +416,9 @@ input:focus{
 .interessant ul {
   display: flex;
   flex-direction: row;
-  overflow: scroll;
-  list-style-type: none;
   text-align: left;
   overflow: auto;
   list-style-type: none;
-  text-align: left;
 }
 
 .interessant li a {
@@ -441,7 +437,7 @@ input:focus{
   margin-left: 0;
 }
 
-.interessant ul li a img {
+.interessant img {
   display: block;
   width: 20em;
   margin-bottom:.5em;
@@ -489,18 +485,18 @@ input:focus{
   margin-top: 1.5em;
 }
 
-.service ul li img {
+.service img {
   flex-direction: row;
   float: left;
   width: 4em;
   margin-right: 1.5em;
 }
 
-.service ul li a {
+.service a {
   color: white;
 }
 
-.service ul li p {
+.service p {
   font-family: 'Arvo', serif;
   font-size: 0.875em;
   align-content: center;
@@ -539,7 +535,7 @@ input:focus{
   margin-left: 1em;
 }
 
-.socials ul li a img {
+.socials img {
   width:2em;
 }
 
@@ -609,7 +605,7 @@ section.logo a:active{
 
 .banner_mode h2{
   margin-top: 1em;;
-  font-size: 2.4em;
+  font-size: 2.2em;
   font-family: 'Arvo', serif;
   font-weight: 900;
   color: var(--sub-textcolor);
@@ -617,7 +613,7 @@ section.logo a:active{
 }
 
 .banner_mode h3 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: 'Arvo', serif;
   font-weight: 100;
   color: var(--sub-textcolor);
@@ -628,15 +624,14 @@ section.logo a:active{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top:1.65em;
-  width: 25em;
-  text-align: center;
+  margin-top:1.7em;
+  width: 24.5em;
 }
 
 /*catagorie mode*/
 
 .catagorie_mode{
-padding: 1.5em 0em 2.2em 0em;
+padding: 1.5em 1em 2.2em 1em;
 }
 
 .catagorie_mode h2{
@@ -644,7 +639,7 @@ padding: 1.5em 0em 2.2em 0em;
   margin-bottom:.5em;
   color: var(--sub-textcolor);
   font-family: 'Arvo', serif;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .catagorie_mode > ul{
@@ -672,7 +667,6 @@ list-style-type: none;
   color: var(--sub-textcolor);
   font-family: 'Arvo', serif;
   font-size: 1.5em;
-  margin-top: em;
   margin-bottom: .5em;
 }
 
@@ -694,7 +688,7 @@ ul li a:active{
 .trends h2{
     color: var(--sub-textcolor);
     font-family: 'Arvo', serif;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom:.5em;
   }
 
@@ -757,7 +751,7 @@ order:-1;
 .zoek h2 {
   color: var(--sub-textcolor);
   font-family: 'Arvo', serif;
-  font-size: 2em;
+  font-size: 1.8em;
   margin-top:1em;
   margin-bottom:.8em;
 }
@@ -813,10 +807,24 @@ order:-1;
     width: 38em;
   }
 
-@media (min-width:54em){
+@media (min-width:48em){
+  
   body{
     margin:auto;
-    width: 54em;
+    width: 48em;
+  }
+
+  #logo{
+  height:2.3em;
+}
+
+  nav button::before {
+  font-size: 2.1em;
+}
+
+  section.icons img{
+    width:2.3em;
+    margin-left:1em;
   }
 
   .banner h2{
@@ -830,6 +838,24 @@ order:-1;
     left: .5em;
     font-size: 2.3em;
   }
+
+  /*2e pagina*/
+
+  .banner_mode h2{
+    font-size: 2.6em;
+    margin-top: 1em;
+    text-align: center;
+  }
+  
+  .banner_mode h3 {
+    font-size: 2.2em;
+    text-align: center;
+  }
+
+  .banner_mode img{
+    margin-top:.3em;
+  }
+
   .catagory h2,
   .aanbevelingen h2,
   .cadeaus h2,
@@ -846,19 +872,19 @@ order:-1;
   
 }
 
-@media (min-width:70em){
+@media (min-width:64em){
   body{
     margin:auto;
-    width: 70em;
+    width: 64em;
   }
 
   nav a {
     font-size: 1em;
   }  
 
-Header{
-  margin-bottom: 1em;
-  margin-top: 1em;
+  Header{
+  margin-bottom: .5em;
+  margin-top: .5em;
 }
 
   #logo {
@@ -866,9 +892,15 @@ Header{
     margin-left: .1em;
   }
 
+  nav button::before {
+    font-size: 2.4em;
+  }
+
   section.icons ul li img {
     width: 2.5em;
   } 
+
+/*2e pagina*/
 
 .aanbevelingen li a,
 .catagory li a,
@@ -881,12 +913,31 @@ Header{
   font-size:1.1em;
 }
 
+.banner_mode h2{
+  margin-top: 1em;
+  margin-left: 1.5em;
+  font-size: 2.6em;
+  text-align: left;
 }
 
-@media (min-width:88em){
+.banner_mode h3 {
+  font-size: 2.2em;
+  text-align: left;
+  margin-left:1.7em;
+}
+
+.banner_mode img{
+  display: block;
+  margin-right:10em;
+  width: 24,5em;
+}
+
+}
+
+@media (min-width:75em){
   body{
     margin:auto;
-    width: 88em;
+    width: 75em;
   }
 }
 
