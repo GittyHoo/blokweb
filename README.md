@@ -22,7 +22,7 @@ Luka Bronius
 Mijn niveau ligt tussen het blauw en rood in, wel meer naar de blauwe kant dan naar de rode ;)
 
 #### Je focus:
-Ik zal me gaan focussen op de plane van de website.
+Ik zal me gaan focussen op de responsiveness van de website.
  
 </details>
 
