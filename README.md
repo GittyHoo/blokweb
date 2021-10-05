@@ -174,8 +174,15 @@ Ik vond het coderen in het begin erg frustrerend, vooral omdat ik het meerendeel
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+Hier screenshot(s) van mijn eindresultaat
 
+Mobiel: <img src="images/eindresultaat_mobiel.png" width="375px" alt=""><img src="images/eindresultaat_mobiel2.png" width="375px" alt="">
+<img src="images/eindresultaat_mobiel3.png" width="375px" alt=""><img src="images/eindresultaat_mobiel4.png" width="375px" alt="">  
+Comp: <img src="images/eindresultaat_comp.png" width="375px" alt=""> <img src="images/eindresultaat_comp2.png" width="375px" alt="">
+ <img src="images/eindresultaat_comp3.png" width="375px" alt=""><img src="images/eindresultaat_comp_2.png" width="375px" alt="">
+ <img src="images/eindresultaat_comp_2_1.png" width="375px" alt=""><img src="images/eindresultaat_comp_2_2.png" width="375px" alt="">
+ 
+ 
 </details>
 
 
@@ -185,9 +192,6 @@ hier screenshot(s) van je eindresultaat
 ## Bronnenlijst
 
 <details open>
-<summary>continu bijhouden terwijl je werkt</summary>
-
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. Dlo, de opdrachten die wij kregen als huiswerk: https://codepen.io/shooft/pen/LYLzWVy, https://codepen.io/shooft/pen/yLXzvaM, https://codepen.io/shooft/pen/mdwroZE
 2. Google icons: https://fonts.google.com/icons
