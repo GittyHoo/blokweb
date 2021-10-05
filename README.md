@@ -181,6 +181,7 @@ Mobiel: <img src="images/eindresultaat_mobiel.PNG" width="375px" alt=""><img src
 Comp: <img src="images/eindresultaat_comp.PNG" width="375px" alt=""> <img src="images/eindresultaat_comp2.PNG" width="375px" alt="">
  <img src="images/eindresultaat_comp3.PNG" width="375px" alt=""><img src="images/eindresultaat_comp_2.PNG" width="375px" alt="">
  <img src="images/eindresultaat_comp_2_1.PNG" width="375px" alt=""><img src="images/eindresultaat_comp_2_2.PNG" width="375px" alt="">
+ Om mijn volledige website te kunnen bekijken, ga naar: gittyhoo.github.io/blokweb/
  
  
 </details>
