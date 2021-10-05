@@ -215,7 +215,7 @@ input:focus{
  }
 
 .banner img:hover{
-  border: solid .1em white;
+  border: solid .2em white;
 }
 
 .banner h2 {
@@ -831,12 +831,13 @@ order:-1;
 .subbutton img{
   margin-top:.5em;
   width:2.1875em;
+  transition:.3s;
 }
 
 .subbutton img:hover,
 .subbutton img:focus,
 .subbutton img:active{
-  border: solid white;
+  border: solid .2em white;
 }
 
 /*Nieuwe mode*/
