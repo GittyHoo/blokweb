@@ -123,13 +123,15 @@ Tijdens het 2e voortgang gesprek kreeg ik weer hele bruikbare feedback van de do
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
-- Ik zag dat ik hier en daar nog een aantal: states, mistte, zoals bij links (a's).
+- Ik zag dat ik hier en daar nog een aantal: states, mistte, zoals bij verschillende links (a's).
 - Ook zag ik dat mijn button in de banner niet gezien werd als je door de website heen tabt' 
+- De reader last alles volledig op, ook de tekst die in de href stonden, hierdoor las de reader sommige elementen 2x op, zoals bij:
+/*<li><a href="index.html"><img src="images/boekicon.png" alt="boeken">Boeken</a></li>*/
 
 #### States toevoegen
 <img src="images/bevinding.png" width="375px" alt="">
 
-Deze Li's (a's) hadden eerst geen underline als je over de foto/tekst heen hover'de, dit heb ik opgelost doormiddel van states toe te voegen aan dit element.
+Deze Li's (a's) hadden eerst geen underline als je over de foto/tekst heen hover'de, dit heb ik opgelost doormiddel van states toe te voegen aan deze verschillende elementen.
 
 #### Banner
 <img src="images/bevinding2.png" width="375px" alt="">
