@@ -125,8 +125,7 @@ Tijdens het 2e voortgang gesprek kreeg ik weer hele bruikbare feedback van de do
 Lijst met je bevindingen die in de test naar voren kwamen:
 - Ik zag dat ik hier en daar nog een aantal: states, mistte, zoals bij verschillende links (a's).
 - Ook zag ik dat mijn button in de banner niet gezien werd als je door de website heen tabt' 
-- De reader last alles volledig op, ook de tekst die in de href stonden, hierdoor las de reader sommige elementen 2x op, zoals bij:
-/*<li><a href="index.html"><img src="images/boekicon.png" alt="boeken">Boeken</a></li>*/
+- De reader last alles volledig op, ook de tekst die in de href stonden, hierdoor las de reader sommige elementen 2x op, zoals bij de Li's in de nav.
 
 #### States toevoegen
 <img src="images/bevinding.png" width="375px" alt="">
@@ -136,7 +135,7 @@ Deze Li's (a's) hadden eerst geen underline als je over de foto/tekst heen hover
 #### Banner
 <img src="images/bevinding2.png" width="375px" alt="">
  
-Hier zie je de banner die aan de top staat van mijn pagina. Ik heb hier (nog) geen oplossing voor. 
+Hier zie je de banner die aan de top staat van mijn pagina. Ik heb de a rondom de banner gezet, waardoor hij nu volledig klikbaar is geworden.
 
 </details>
 
@@ -150,31 +149,17 @@ Hier zie je de banner die aan de top staat van mijn pagina. Ik heb hier (nog) ge
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Tijdens de 3e en laatste voortganggesprek was ik erg blij en tevreden over mijn werk. Ik liep wel enigsinds achter omdat ik nog geen 2e pagina had gemaakt. 
+Hier zal ik in het weekend en de komende week hard aan gaan werken. 
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
-
+- Mijn focus is om mijn website responsive te maken, echter had had ik dit nog niet verwerkt in mijn website, dus dit is een punt waar ik wel hard aan moet gaan werken de komende dagen.
+- Ook moet ik de komende dagen beginnen aan mijn 2e pagina.
+ 
 </details>
-
-
-
 
 
 ## Eindgesprek (week 5)
@@ -183,7 +168,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+In het begin had ik erg veel moeite met de vele verschillende elementen. Ook vond ik het correct nesten van de verschillende elementen erg moeilijk en erg verwarrend.
+In de eerste week had ik het volgende gebouwd: <img src="images/first.png" width="375px" alt=""> Zoals je hier kan zien was ik 1) te snel begonnen met het stylen van de elementen en 2) was mijn html bestand een chaos, zoals je hier kan zien: <img src="images/html.png" width="375px" alt="">
+Ik vond het coderen in het begin erg frustrerend, vooral omdat ik het meerendeels gewoon niet begreep. Maar na meerdere feedback-gesprekken, eigen research en hulp vragen aan mijn mede-studenten, begon ik het steeds meer te begrijpen. De vele opdrachten die wij kregen als huiswerk hebben mij ook degelijk geholpen in het begrijpen van de verschillende manieren van hoe je elementen kan stylen. 
 
 ### Screenshot(s)
 
@@ -202,8 +189,9 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. Dlo, de opdrachten die wij kregen als huiswerk: https://codepen.io/shooft/pen/LYLzWVy, https://codepen.io/shooft/pen/yLXzvaM, https://codepen.io/shooft/pen/mdwroZE
+2. Google icons: https://fonts.google.com/icons
+3. Bol.com
+4. fonts: https://fonts.google.com/specimen/Arvo?query=arvo
 
 </details>
