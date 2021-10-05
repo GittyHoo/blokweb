@@ -685,7 +685,7 @@ padding: 1.5em 1em 2.2em 1em;
   list-style-type:none;
   display: flex;
   flex-direction: row;
-  overflow: scroll;
+  overflow: auto;
   gap:1em;
 }
 
@@ -733,7 +733,7 @@ ul li a:active{
 .rond-container ul{
   display: flex;
   flex-direction: row;
-  overflow: scroll;
+  overflow: auto;
   list-style-type: none;
   align-items: center;
   text-align: center;
@@ -978,7 +978,7 @@ order:-1;
   }
 
   .rond-container img {
-    width: 8.3em;
+    width: 8.1em;
 }
 
 }
