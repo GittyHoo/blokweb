@@ -169,18 +169,18 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 In het begin had ik erg veel moeite met de vele verschillende elementen. Ook vond ik het correct nesten van de verschillende elementen erg moeilijk en erg verwarrend.
-In de eerste week had ik het volgende gebouwd: <img src="images/first.png" width="375px" alt=""> Zoals je hier kan zien was ik 1) te snel begonnen met het stylen van de elementen en 2) was mijn html bestand een chaos, zoals je hier kan zien: <img src="images/html.png" width="375px" alt="">
+In de eerste week had ik het volgende gebouwd: <img src="images/first.PNG" width="375px" alt=""> Zoals je hier kan zien was ik 1) te snel begonnen met het stylen van de elementen en 2) was mijn html bestand een chaos, zoals je hier kan zien: <img src="images/html.PNG" width="375px" alt="">
 Ik vond het coderen in het begin erg frustrerend, vooral omdat ik het meerendeels gewoon niet begreep. Maar na meerdere feedback-gesprekken, eigen research en hulp vragen aan mijn mede-studenten, begon ik het steeds meer te begrijpen. De vele opdrachten die wij kregen als huiswerk hebben mij ook degelijk geholpen in het begrijpen van de verschillende manieren van hoe je elementen kan stylen. 
 
 ### Screenshot(s)
 
 Hier screenshot(s) van mijn eindresultaat
 
-Mobiel: <img src="images/eindresultaat_mobiel.png" width="375px" alt=""><img src="images/eindresultaat_mobiel2.png" width="375px" alt="">
-<img src="images/eindresultaat_mobiel3.png" width="375px" alt=""><img src="images/eindresultaat_mobiel4.png" width="375px" alt="">  
-Comp: <img src="images/eindresultaat_comp.png" width="375px" alt=""> <img src="images/eindresultaat_comp2.png" width="375px" alt="">
- <img src="images/eindresultaat_comp3.png" width="375px" alt=""><img src="images/eindresultaat_comp_2.png" width="375px" alt="">
- <img src="images/eindresultaat_comp_2_1.png" width="375px" alt=""><img src="images/eindresultaat_comp_2_2.png" width="375px" alt="">
+Mobiel: <img src="images/eindresultaat_mobiel.PNG" width="375px" alt=""><img src="images/eindresultaat_mobiel2.PNG" width="375px" alt="">
+<img src="images/eindresultaat_mobiel3.PNG" width="375px" alt=""><img src="images/eindresultaat_mobiel4.PNG" width="375px" alt="">  
+Comp: <img src="images/eindresultaat_comp.PNG" width="375px" alt=""> <img src="images/eindresultaat_comp2.PNG" width="375px" alt="">
+ <img src="images/eindresultaat_comp3.PNG" width="375px" alt=""><img src="images/eindresultaat_comp_2.PNG" width="375px" alt="">
+ <img src="images/eindresultaat_comp_2_1.PNG" width="375px" alt=""><img src="images/eindresultaat_comp_2_2.PNG" width="375px" alt="">
  
  
 </details>
