@@ -99,14 +99,14 @@ Nadat ik een gesprek had gehad met de docent, kreeg ik wat meer inzicht van wat 
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-In de 2e week had ik een enorme sprong gemaakt. Mijn HTML was al een stuk verbeterd en meerendeels van de HTML bestand had ik al met het css bestand mooier opgemaakt.
+In de 3e week had ik een enorme sprong gemaakt. Mijn HTML-bestand was al een stuk verbeterd en ik had ook al hier en daar wat elementen gestyled.
 
 ### Verslag van meeting
-Tijdens het 2e voortgang gesprek kreeg ik weer hele bruikbare feedback van de docent.
+Tijdens het 2e voortgang gesprek kreeg ik bruikbare feedback van de docent.
 
 - Ik gebruik te veel PX en EM's door elkaar, ik moet dit veranderen naar em's.
-- Ik gebruik te vaak position: relative/absolute, terwijl ik gemakkelijk de margin kan gebruiken.
-- Ik moet mijn classes op de parent plaatsen, en niet op een van de child's.
+- Ik gebruik te vaak position: relative/absolute, terwijl ik gemakkelijk margin/flexbox kan gebruiken.
+- Ik moet mijn classes op de parent plaatsen, en niet op een van de children.
 - Ik kan in mijn css bestand sommige code korter en compacter schrijven.
 - Ik moet gaan beginnen met het maken van de hamburgermenu en de 2e webpagina.
 
@@ -124,8 +124,8 @@ Tijdens het 2e voortgang gesprek kreeg ik weer hele bruikbare feedback van de do
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 - Ik zag dat ik hier en daar nog een aantal: states, mistte, zoals bij verschillende links (a's).
-- Ook zag ik dat mijn button in de banner niet gezien werd als je door de website heen tabt' 
-- De reader last alles volledig op, ook de tekst die in de href stonden, hierdoor las de reader sommige elementen 2x op, zoals bij de Li's in de nav.
+- Ook zag ik dat mijn button in de banner niet gezien werd als je door de website heen tabt'. 
+- Vele elementen waar een href instaat, leest de reader ook op. Hierdoor leest de reader soms 2x hetzelfde woord.
 
 #### States toevoegen
 <img src="images/bevinding.png" width="375px" alt="">
@@ -146,15 +146,13 @@ Hier zie je de banner die aan de top staat van mijn pagina. Ik heb de a rondom d
 ## Voortgang 3 (week 4)
 
 <details>
-<summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
 Tijdens de 3e en laatste voortganggesprek was ik erg blij en tevreden over mijn werk. Ik liep wel enigsinds achter omdat ik nog geen 2e pagina had gemaakt. 
-Hier zal ik in het weekend en de komende week hard aan gaan werken. 
+Hier zal ik in de komende hard aan gaan werken.
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - Mijn focus is om mijn website responsive te maken, echter had had ik dit nog niet verwerkt in mijn website, dus dit is een punt waar ik wel hard aan moet gaan werken de komende dagen.
 - Ook moet ik de komende dagen beginnen aan mijn 2e pagina.
@@ -168,9 +166,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-In het begin had ik erg veel moeite met de vele verschillende elementen. Ook vond ik het correct nesten van de verschillende elementen erg moeilijk en erg verwarrend.
-In de eerste week had ik het volgende gebouwd: <img src="images/first.PNG" width="375px" alt=""> Zoals je hier kan zien was ik 1) te snel begonnen met het stylen van de elementen en 2) was mijn html bestand een chaos, zoals je hier kan zien: <img src="images/html.PNG" width="375px" alt="">
-Ik vond het coderen in het begin erg frustrerend, vooral omdat ik het meerendeels gewoon niet begreep. Maar na meerdere feedback-gesprekken, eigen research en hulp vragen aan mijn mede-studenten, begon ik het steeds meer te begrijpen. De vele opdrachten die wij kregen als huiswerk hebben mij ook degelijk geholpen in het begrijpen van de verschillende manieren van hoe je elementen kan stylen. 
+In het begin had ik erg veel moeite met de vele verschillende elementen. Ook vond ik het correct nesten van verschillende elementen erg verwarrend.
+In de eerste week had ik het volgende gebouwd: <img src="images/first.PNG" width="375px" alt=""> Zoals je hier kan zien was ik 1) te snel begonnen met het stylen van de elementen en 2) was mijn html bestand een chaos, zie hier: <img src="images/html.PNG" width="375px" alt="">
+Ik vond het coderen in het begin erg frustrerend, vooral omdat ik het meerendeels gewoon niet begreep. Maar doormiddel van de feedback-gesprekken, eigen research en hulp van mijn mede-studenten, begon ik het steeds meer te begrijpen. De vele opdrachten die wij kregen als huiswerk hebben mij ook degelijk geholpen in het begrijpen van de verschillende manieren van hoe je je elementen kan nesten en stylen. 
 
 ### Screenshot(s)
 
