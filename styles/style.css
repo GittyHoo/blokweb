@@ -49,9 +49,9 @@ header {
   gap:.4em;
 }
 
-#logo {
+a #logo {
   height: 2em;
-  margin-left: 1em;
+  transition:.4s;
 }
 
 /*animatie logo*/
@@ -79,17 +79,17 @@ header {
 nav button {
   width:5em;
   height: 1em;
-  background-color:white;
+  background-color:transparent;
   border:none;
   position:relative;
   z-index:100;
 }
 
 nav button::before {
-  margin-left:.5em;
   color: #0000A4;
   content:"\2630"; /*code voor hamburger icoon, internationaal*/
   font-size: 1.8em;
+  cursor: pointer;
 }
 
 /*Nav UL, gebruik gemaakt van: https://codepen.io/shooft/pen/yLXzvaM*/
@@ -893,13 +893,19 @@ order:-1;
   width: 48em;
   }
 
+  Header{
+    margin-bottom: .5em;
+    margin-top: .5em;
+  }
+
   nav button::before {
   font-size: 2.1em;
   }
 
-  #logo{
-  height:2.3em;
-}
+  a #logo {
+    margin-left:.5em;
+    height: 2.7em;
+  }
 
   .icons img{
   width:2.3em;
@@ -1032,21 +1038,21 @@ order:-1;
 .banner_mode h2{
   margin-top: 1em;
   margin-left: 1.4em;
-  font-size: 2.7em;
+  font-size: 2.8em;
   text-align: left;
   max-width: 10em;
 }
 
 .banner_mode h3 {
-  font-size: 2.4em;
+  font-size: 2.8em;
   text-align: left;
-  margin-left:1.6em;
+  margin-left:1.4em;
   max-width: 10em;
 }
 
 .banner_mode img{
   margin-right:5em;
-  width: 24em;
+  width: 23.4em;
 }
 
 .rond-container img {
