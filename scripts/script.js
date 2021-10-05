@@ -1,4 +1,4 @@
-var deButton = document.querySelector("nav");
+var deButton = document.querySelector("button");
 
 function openMenu(event) {
   let deNav = document.querySelector("nav")
