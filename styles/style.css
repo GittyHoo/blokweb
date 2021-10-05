@@ -212,12 +212,6 @@ input:focus{
   bottom: 1em;
  }
 
-.subbutton:hover,
-.subbutton:focus,
-.subbutton:active{
-  border:solid .15em white;
-}
-
 .banner h2 {
   position: absolute;
   top: .5em;
