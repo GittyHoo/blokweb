@@ -210,7 +210,12 @@ input:focus{
   width: 2.1875em;
   left: 1.08em;
   bottom: 1em;
+  transition: .3s;
  }
+
+.banner img:hover{
+  border: solid .1em white;
+}
 
 .banner h2 {
   position: absolute;
@@ -934,7 +939,7 @@ order:-1;
   }
 
   .tussentekst {
-    font-size:.9em;
+    font-size:1em;
   }
 
   /*2e pagina*/
@@ -1022,6 +1027,9 @@ order:-1;
   font-size:1.15em;
 }
 
+.tussentekst {
+  font-size:1.1em;
+}
 
 /*2e pagina*/
 
