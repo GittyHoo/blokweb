@@ -13,8 +13,7 @@
   --main-textcolor:black;
   --sub-textcolor:rgb(0, 0, 164);
   --main-backgroundcolor:white;
-  --sub-backgroundcolor:rgb(0, 0, 164);
-}
+  --sub-backgroundcolor:rgb(0, 0, 164);}
 
 /*Header + header iconen*/
 
@@ -26,28 +25,54 @@ header {
   margin-top: .2em;
 }
 
-section.icons {
+.icons {
   margin-top: 1em;
   margin-left: auto;
   margin-right: 1em;
-
 }
 
-section.icons img {
+.icons img {
   width: 1.7em;
-  margin:.08em;
-} 
+  transition:.4s;
+}
 
-section.icons ul {
+.icons img:hover{
+  background:#deecff;
+  border-radius: 6em;
+  padding:.1em;
+}
+
+.icons ul {
   display: flex;
   flex-direction: row;
   list-style: none;
+  gap:.4em;
 }
 
 #logo {
   height: 2em;
-  margin-left: .1em;
+  margin-left: 1em;
 }
+
+/*animatie logo*/
+@keyframes logo-animation {
+  0% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(1.2);
+  }
+  100% {
+    transform:scale(1);
+}
+}
+
+#logo:hover {
+  animation-name:logo-animation;
+  animation-duration:2.5s;
+  animation-iteration-count:infinite;
+}
+
 
 /*Nav hamburger*/
 
@@ -61,8 +86,9 @@ nav button {
 }
 
 nav button::before {
+  margin-left:.5em;
   color: #0000A4;
-  content:"\2630 "; /*code voor hamburger icoon*/
+  content:"\2630"; /*code voor hamburger icoon, internationaal*/
   font-size: 1.8em;
 }
 
@@ -72,18 +98,20 @@ nav ul {
   display: grid;
   position:fixed;
   background:white;
+  overflow: auto;
 
   transform:translatex(-100%);
   z-index:50;
-  transition:.5s;
-  padding-top: 4em;
+  transition:.6s;
+  padding-top: 5em;
   padding-left: 1.3em;
 
-  left:0; right:0; top:0; bottom:0;
+  left:0; right:3em; top:0; bottom:0;
 }
 
 nav ul li {
   list-style-type:none;
+  margin-bottom:1em;
 }
 
 nav a {
@@ -98,17 +126,17 @@ nav a {
   text-decoration: none;
 }
 
-nav a img{
+nav img{
   border-radius: 5em;
   background-color: #F1F6FE;
   padding: .8em;
-  width: 3.125em;
+  width: 3.5em;
   margin-right: 1em;
 }
 
 nav.openMenu ul {
   transform:translatex(0%);
-  left:0; right:0; top:0; bottom:0;
+  left:0; right:3em; top:0; bottom:0;
 }
 
 /*States of the nav links*/
@@ -153,7 +181,6 @@ opacity: 20%;
 }
 
 input[type="search"]{
-  position: relative;
   padding-left: 4em;
   background-image:url('../images/search.png');
   background-repeat:no-repeat;
@@ -162,7 +189,7 @@ input[type="search"]{
 }
 
 input:hover{
-  background-color:#cee1ff ;
+  background-color:#deecff;
 }
 
 input:focus{
@@ -178,12 +205,18 @@ input:focus{
   height: 12em;
 }
 
-.banner a img {
+.banner img {
   position: absolute;
   width: 2.1875em;
   left: 1.08em;
   bottom: 1em;
  }
+
+.subbutton:hover,
+.subbutton:focus,
+.subbutton:active{
+  border:solid .15em white;
+}
 
 .banner h2 {
   position: absolute;
@@ -205,20 +238,20 @@ input:focus{
   color: var(--sub-textcolor);
 }
 
-/*catagory*/
+/*catagorie-section*/
 
-.catagory{
+.catagorie{
   padding: 1em 1em 2em 1em;
   margin-bottom: 1em;
 }
 
-.catagory h2 {
-  margin-bottom: 1em;
-  font-size: 1.125em;
-  font-family: 'Arvo', serif;
+.catagorie h2 {
+  margin-bottom:1em;
+  font-size:1.5em;
+  font-family:'Arvo', serif;
 }
 
-.catagory ul{
+.catagorie ul{
   display: flex;
   flex-direction: row;
   overflow: auto;
@@ -227,57 +260,47 @@ input:focus{
   text-align: center;
 }
 
-.catagory img {
+.catagorie img {
   display: block;
   width: 8em;
   margin-bottom: .5em;
 }
 
-.catagory li a {
+.catagorie li a {
   text-decoration: none;
   color: var(--main-textcolor);
   font-family: 'Arvo', serif;
+  font-size: 1em;
 }
 
-.catagory li:first-of-type{
+.catagorie li:first-of-type{
   margin-left: 0;
 }
 
-.catagory li{
+.catagorie li{
   margin-left: 1em;
 }
 
-/*catagory a states*/
+/*catagorie a states*/
 
-.catagory li a:hover {
+.catagorie li a:hover {
   text-decoration: underline var(--main-color);
 }
 
-.catagory li a:focus,
-.catagory li a:active{
+.catagorie li a:focus,
+.catagorie li a:active{
   color: var(--sub-textcolor);
   text-decoration: underline var(--main-color);
 }
 
 /*Nu trending*/
 
-.aanbevelingen {
-  padding: 1em 1em 1em 1em;
-  margin-bottom: 1em;
-}
-
-.aanbevelingen h2 {
-  margin-bottom: .5em;
-  font-size: 1.125em;
-  font-family: 'Arvo', serif;
-}
-
 .tussentekst {
   text-decoration: none;
   color: #00f;
   font-family: 'Arvo', serif;
   font-weight: 300;
-  font-size: .875em;
+  font-size:.875em;
 }
 
 .pijl {
@@ -286,7 +309,18 @@ input:focus{
   text-align: center;
 }
 
-.aanbevelingen ul{
+.producten {
+  padding: 1em 1em 1em 1em;
+  margin-bottom: 1em;
+}
+
+.producten h2 {
+  margin-bottom: .5em;
+  font-size:1.5em;
+  font-family: 'Arvo', serif;
+}
+
+.producten ul{
   display: flex;
   flex-direction: row;
   overflow: auto;
@@ -294,35 +328,36 @@ input:focus{
   margin-top: 1em;
 }
 
-.aanbevelingen li a {
+.producten li:first-of-type{
+  margin-left: 0;
+}
+
+.producten li {
+  margin-left: 1em;
+}
+
+.producten li a {
   text-decoration: none;
   color: var(--main-textcolor);
   font-family: 'Arvo', serif;
   font-weight: 700;
-  font-size: .8em;
+  font-size:1em;
 }
 
-.aanbevelingen li:first-of-type{
-  margin-left: 0;
-}
-
-.aanbevelingen li {
-  margin-left: 1em;
-}
-
-.aanbevelingen li a p {
+.producten p {
   margin-top: 1em;
   color: red;
   font-family: 'Arvo', serif;
   font-weight: 300;
 }
 
-.aanbevelingen li a img {
+.producten li a img {
   display: block;
   width: 10em;
 }
 
-/*persoonlijke aanbevelingen states*/
+
+/*producten a states*/
 
 .tussentekst:hover{
   text-decoration: underline var(--main-color);
@@ -334,12 +369,12 @@ input:focus{
   text-decoration: underline var(--main-color);
 }
 
-.aanbevelingen li a:hover{
+.producten li a:hover{
   text-decoration: underline black;
 }
 
-.aanbevelingen li a:active,
-.aanbevelingen li a:focus{
+.producten li a:active,
+.producten li a:focus{
   color:var(--sub-textcolor);
   text-decoration: underline black;
 }
@@ -352,7 +387,7 @@ input:focus{
 
 .cadeaus h2 {
   margin-bottom: 1em;
-  font-size: 1.125em;
+  font-size:1.5em;
   font-family: 'Arvo', serif;
 }
 
@@ -365,14 +400,7 @@ input:focus{
   list-style-type: none;
   align-items: center;
   text-align: center;
-}
-
-.cadeaus li {
-  margin-left: 1em;
-}
-
-.cadeaus li:first-of-type{
-  margin-left: 0;
+  gap:1em;
 }
 
 .cadeaus li a {
@@ -380,6 +408,7 @@ input:focus{
   color: var(--main-textcolor);
   font-family: 'Arvo', serif;
   font-weight: 400;
+  font-size:1em;
 }
 
 .cadeaus img {
@@ -405,11 +434,12 @@ input:focus{
 .interessant{
   position: relative;
   padding: 1em 1em 2em 1em;
+  margin-bottom:2em;
 }
 
 .interessant h2 {
   margin-bottom: 1em;
-  font-size: 1.125em;
+  font-size: 1.5em;
   font-family: 'Arvo', serif;
 }
 
@@ -419,22 +449,14 @@ input:focus{
   text-align: left;
   overflow: auto;
   list-style-type: none;
+  gap:1em;
 }
 
 .interessant li a {
   text-decoration: none;
   color: var(--main-textcolor);
   font-family: 'Arvo', serif;
-  font-size: .8em;
-  max-width: 8em;
-}
-
-.interessant li{
-  margin-left: 1em;
-}
-
-.interessant li:first-of-type{
-  margin-left: 0;
+  font-size:1em;
 }
 
 .interessant img {
@@ -467,7 +489,7 @@ input:focus{
   margin-bottom: 1.3em;
   color: white;
   font-family: 'Arvo', serif;
-  font-size: 1.125em;
+  font-size:1.5em;
 }
 
 .service ul {
@@ -487,18 +509,25 @@ input:focus{
 
 .service img {
   flex-direction: row;
+  padding: 0em 0em 2.5em 0em;
   float: left;
-  width: 4em;
+  width: 4.5em;
   margin-right: 1.5em;
+  margin-left:1em;
 }
 
 .service a {
   color: white;
 }
 
+.service a:hover,
+.service a:focus{
+  text-decoration: none;
+}
+
 .service p {
   font-family: 'Arvo', serif;
-  font-size: 0.875em;
+  font-size:1em;
   align-content: center;
   align-items: center;
   line-height: 1.2em;
@@ -514,7 +543,7 @@ input:focus{
 
 .socials h2{
   font-family: 'Arvo', serif;
-  font-size: 1.125em;
+  font-size:1.125em;
   margin-bottom: 2em;
   text-align: center;
 }
@@ -541,7 +570,7 @@ input:focus{
 
 .socials p{
   font-family: 'Arvo', serif;
-  font-size: .8em;
+  font-size: 1em;
   margin-top: 2em;
   text-align: center;
 }
@@ -559,9 +588,17 @@ input:focus{
   text-decoration: underline;
 }
 
+.socials img:hover,
+.socials img:focus,
+.socials img:active{
+    background:#deecff;
+    border-radius: 6em;
+    padding:.01em;
+  }
+
 /*beneden logo + voorwaarden text*/
 
-section.logo{
+.logo{
   padding: 1.5em 0em 2.5em 0em;
   border-bottom: 1px solid #e6e6e6;
   margin-left: 2em;
@@ -576,24 +613,24 @@ section.logo{
   width: 15em;
 }
 
-section.logo p{
+.logo p{
   font-family: 'Arvo', serif;
   font-size: .625em;
   text-align: center;
 }
 
-section.logo a{
+.logo a{
   color: var(--sub-textcolor);
   text-decoration: none;
 }
 
-section.logo a:hover,
-section.logo a:focus,
-section.logo a:active{
+.logo a:hover,
+.logo a:focus,
+.logo a:active{
   text-decoration: underline var(--sub-textcolor);
 }
 
-/*einde van pagina 1, begin van de mode pagina*/
+/*Begin pagina 2*/
 
 .banner_mode {
   display: flex;
@@ -656,18 +693,19 @@ padding: 1.5em 1em 2.2em 1em;
 list-style-type: none;
 }
 
-.catagorie_mode ul li a{
-  text-decoration: none;
-  color: var(--sub-textcolor);
-  font-family: 'Arvo', serif;
-  line-height: 2em;
-}
-
 .catagorie_mode h3{
   color: var(--sub-textcolor);
   font-family: 'Arvo', serif;
   font-size: 1.5em;
   margin-bottom: .5em;
+}
+
+.catagorie_mode ul li a{
+  text-decoration: none;
+  color: var(--sub-textcolor);
+  font-family: 'Arvo', serif;
+  font-size: 1em;
+  line-height: 2em;
 }
 
 /*a mode states*/
@@ -677,8 +715,66 @@ ul li a:active{
   text-decoration: underline;
 }
 
+/*zoek op product*/
+.rond-container{
+  padding: 1em 1em 2em 1em;
+  margin-bottom: 1em;
+}
+
+.rond-container h2 {
+  color: var(--sub-textcolor);
+  font-family: 'Arvo', serif;
+  font-size: 1.8em;
+  margin-top:1em;
+  margin-bottom:.8em;
+}
+
+.rond-container ul{
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
+}
+
+.rond-container img {
+  display: block;
+  width: 8em;
+  margin-bottom: .5em;
+  border-radius: 10em;
+}
+
+.rond-container li a {
+  text-decoration: none;
+  color: var(--sub-textcolor);
+  font-family: 'Arvo', serif;
+  font-size:1em;
+}
+
+.rond-container li:first-of-type{
+  margin-left: 0;
+}
+
+.rond-container li{
+  margin-left: 1em;
+}
+
+/*rond-container > li a states*/
+
+.rond-container li a:hover {
+  text-decoration: underline var(--main-color);
+}
+
+.rond-container li a:focus,
+.rond-container li a:active{
+  color: var(--sub-textcolor);
+  text-decoration: underline var(--main-color);
+}
+
 /*Trends*/
-.trends{ /*de container*/
+
+.trends{ 
   padding: 1.5em 1.5em 1.5em 1.5em;
   background-color:#ffeedd;
   width:auto;
@@ -716,10 +812,10 @@ order:-1;
 
 .trends h3{
   margin-top:.5em;
-  margin-bottom:.5em;
+  margin-bottom:.2em;
   color: var(--sub-textcolor);
   font-family: 'Arvo', serif;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .trends p{
@@ -742,64 +838,47 @@ order:-1;
   border: solid white;
 }
 
-/*zoek op product*/
-.zoek{
-  padding: 1em 1em 2em 1em;
-  margin-bottom: 1em;
+/*Nieuwe mode*/
+.nieuwemode {
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  width:auto;
+  margin-bottom: 2em;
 }
 
-.zoek h2 {
+.nieuwemode h2{
   color: var(--sub-textcolor);
   font-family: 'Arvo', serif;
   font-size: 1.8em;
-  margin-top:1em;
-  margin-bottom:.8em;
 }
 
-.zoek ul{
-  display: flex;
-  flex-direction: row;
-  overflow: scroll;
-  list-style-type: none;
-  align-items: center;
-  text-align: center;
-}
-
-.zoek img {
-  display: block;
-  width: 8em;
-  margin-bottom: .5em;
-  border-radius: 10em;
-}
-
-.zoek li a {
-  text-decoration: none;
+.nieuwemode h3{
   color: var(--sub-textcolor);
   font-family: 'Arvo', serif;
+  font-weight: 300;
+  font-size: 1.8em;
+  margin-bottom:.5em;
 }
 
-.zoek li:first-of-type{
-  margin-left: 0;
+.nieuwemode p {
+  max-width: 50em;
+  font-family: 'Arvo', serif;
+  color:rgb(51, 51, 51);
+  font-size:1em;
+  line-height: 1.65em;
 }
 
-.zoek li{
-  margin-left: 1em;
+.nieuwemode a{
+  color:var(--sub-textcolor);
+  text-decoration: none;
 }
 
-/*zoek a states*/
-
-.zoek li a:hover {
-  text-decoration: underline var(--main-color);
+.nieuwemode a:hover,
+.nieuwemode a:focus,
+.nieuwemode a:active{
+  text-decoration: underline var(--sub-textcolor);
 }
 
-.zoek li a:focus,
-.zoek li a:active{
-  color: var(--sub-textcolor);
-  text-decoration: underline var(--main-color);
-}
-
-
-/*Responsive*/
+/*Responsive elementen*/
 
 @media (min-width:38em){
   body{
@@ -810,22 +889,24 @@ order:-1;
 @media (min-width:48em){
   
   body{
-    margin:auto;
-    width: 48em;
+  margin:auto;
+  width: 48em;
+  }
+
+  nav button::before {
+  font-size: 2.1em;
   }
 
   #logo{
   height:2.3em;
 }
 
-  nav button::before {
-  font-size: 2.1em;
-}
-
-  section.icons img{
-    width:2.3em;
-    margin-left:1em;
+  .icons img{
+  width:2.3em;
+  margin-left:1em;
   }
+
+  /*font-sizes*/
 
   .banner h2{
     top: .3em;
@@ -837,6 +918,23 @@ order:-1;
     top: 1.5em;
     left: .5em;
     font-size: 2.3em;
+  }
+
+  .banner_mode img{
+    margin-top:.33em;
+  }
+
+  .catagorie h2,
+  .cadeaus h2,
+  .producten h2,
+  .interessant h2,
+  .service h2,
+  .socials h2{
+    font-size:1.7em;
+  }
+
+  .tussentekst {
+    font-size:.9em;
   }
 
   /*2e pagina*/
@@ -852,24 +950,29 @@ order:-1;
     text-align: center;
   }
 
-  .banner_mode img{
-    margin-top:.3em;
-  }
-
-  .catagory h2,
-  .aanbevelingen h2,
-  .cadeaus h2,
-  .interessant h2,
-  .service h2,
-  .socials h2 {
-    font-size: 1.4em;
-  }
-
   .service h2 {
     margin-left: .4em;
   }
+
+  .catagorie_mode h2{
+    margin-top:.4em;
   }
-  
+
+  .catagorie_mode h2,
+  .trends h2,
+  .rond-container h2{
+    font-size: 2em;
+  }
+
+  .catagorie_mode h3,
+  .trends h3 {
+    font-size: 1.6em;
+  }
+
+  .rond-container img {
+    width: 8.3em;
+}
+
 }
 
 @media (min-width:64em){
@@ -896,40 +999,91 @@ order:-1;
     font-size: 2.4em;
   }
 
-  section.icons ul li img {
+  .icons ul li img {
     width: 2.5em;
   } 
 
-/*2e pagina*/
+/*font-sizes*/
 
-.aanbevelingen li a,
-.catagory li a,
-.cadeaus li a,
-.interessant li a{
-  font-size:1em;
+.catagorie h2,
+.cadeaus h2,
+.producten h2,
+.interessant h2,
+.service h2,
+.socials h2{
+  font-size:1.9em;
 }
 
+.catagorie li a,
+.producten li a,
+.cadeaus li a,
+.interessant li a,
+.service p{
+  font-size:1.15em;
+}
+
+
+/*2e pagina*/
+
 .socials p a {
-  font-size:1.1em;
+  font-size:.9em;
 }
 
 .banner_mode h2{
   margin-top: 1em;
-  margin-left: 1.5em;
-  font-size: 2.6em;
+  margin-left: 1.4em;
+  font-size: 2.7em;
   text-align: left;
+  max-width: 10em;
 }
 
 .banner_mode h3 {
-  font-size: 2.2em;
+  font-size: 2.4em;
   text-align: left;
-  margin-left:1.7em;
+  margin-left:1.6em;
+  max-width: 10em;
 }
 
 .banner_mode img{
-  display: block;
-  margin-right:10em;
-  width: 24,5em;
+  margin-right:5em;
+  width: 24em;
+}
+
+.rond-container img {
+  width: 10em;
+}
+
+.catagorie_mode ul li a,
+.trends p,
+.rond-container li a {
+  font-size: 1.15em
+}
+
+.trends p{
+  line-height:1.7em;
+}
+
+.nieuwemode {
+  display: flex;
+  flex-direction: row;
+}
+
+.nieuwemodetitels {
+  display: flex;
+  flex-direction: column;
+}
+
+.nieuwemodetitels h2{
+  font-size: 2em;
+}
+
+.nieuwemodetitels h3{
+  font-size: 2em;
+}
+
+.nieuwemode p {
+  margin-left:14em;
+  max-width: 32em;
 }
 
 }
@@ -939,5 +1093,57 @@ order:-1;
     margin:auto;
     width: 75em;
   }
+
+  .cadeaus img {
+    width:15em;
+  }
+
+  /*pagina 2*/
+
+.damesmode img,
+.herenmode img,
+.meisjesmode img,
+.jongensmode img{
+  width:15em;
 }
 
+.knits p,
+.puffers p,
+.teddy p{
+  max-width: 17.5em;
+}
+
+.trends ul{
+  gap:3em;
+  justify-content: center;
+}
+
+.rond-container img {
+    width: 12em;
+}
+
+.catagorie_mode h2,
+.trends h2,
+.rond-container h2,
+.nieuwemode h2,
+.nieuwemode h3 {
+  font-size: 2.3em;
+}
+
+.nieuwemode p {
+  margin-left:23em;
+}
+
+.logo p{
+  font-size:.8em;
+  max-width: 60em;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.interessant img {
+  width: 21em;
+}
+
+}
+}
