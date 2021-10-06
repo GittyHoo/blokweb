@@ -801,10 +801,6 @@ ul li a:active{
 .trends li{
 display: flex;
 flex-direction: column;
-} 
-
-.trends a:nth-of-type(1){
-order:-1;
 }
 
 .trends img{
